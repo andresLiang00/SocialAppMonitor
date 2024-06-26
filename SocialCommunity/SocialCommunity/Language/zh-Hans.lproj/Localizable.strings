@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  SocialCommunity
+
+  Created by Andres on 2024/6/26.
+  
+*/
+
+/* MARK: Opening UI */
+"_banner_1_title_"                   = "文件协作与交换";
+"_banner_2_title_"                   = "开放拓展的聊天通讯录";
+"_banner_3_title_"                   = "在线研讨与会议";

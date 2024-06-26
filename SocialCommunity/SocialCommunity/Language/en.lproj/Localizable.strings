@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  SocialCommunity
+
+  Created by Andres on 2024/6/26.
+  
+*/
+
+/* MARK: Opening UI */
+"_banner_1_title_"                   = "Document collaboration and exchange";
+"_banner_2_title_"                   = "Open and expanded chat address book";
+"_banner_3_title_"                   = "Online seminars and conferences";
