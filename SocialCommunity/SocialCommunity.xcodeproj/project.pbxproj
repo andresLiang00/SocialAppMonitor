@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7AC618262C2D87910030D9C9 /* UIView+BasicAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC618252C2D87910030D9C9 /* UIView+BasicAnimation.m */; };
 		7ACE2D9E2C2C02240092982F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACE2D9D2C2C02240092982F /* AppDelegate.m */; };
 		7ACE2DA42C2C02240092982F /* OpeningVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACE2DA32C2C02240092982F /* OpeningVC.m */; };
 		7ACE2DA72C2C02240092982F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ACE2DA52C2C02240092982F /* Main.storyboard */; };
@@ -17,9 +18,16 @@
 		7ACE2DD42C2D05B00092982F /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACE2DD32C2D05B00092982F /* AppConfig.swift */; };
 		7ACE2DD82C2D09F10092982F /* LaunchCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACE2DD62C2D09F10092982F /* LaunchCollectionCell.m */; };
 		7ACE2DD92C2D09F10092982F /* LaunchCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ACE2DD72C2D09F10092982F /* LaunchCollectionCell.xib */; };
+		E3ACF065F30A6ADBD0CD13DF /* Pods_SocialCommunity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B6F465446E28926F81E55B /* Pods_SocialCommunity.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07B6F465446E28926F81E55B /* Pods_SocialCommunity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialCommunity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		231587F49CC8CA5C410BC8DB /* Pods-SocialCommunity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialCommunity.debug.xcconfig"; path = "Target Support Files/Pods-SocialCommunity/Pods-SocialCommunity.debug.xcconfig"; sourceTree = "<group>"; };
+		525D8AAA4506DE7FD88C15D4 /* Pods-SocialCommunity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialCommunity.release.xcconfig"; path = "Target Support Files/Pods-SocialCommunity/Pods-SocialCommunity.release.xcconfig"; sourceTree = "<group>"; };
+		7AC618242C2D87910030D9C9 /* UIView+BasicAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+BasicAnimation.h"; sourceTree = "<group>"; };
+		7AC618252C2D87910030D9C9 /* UIView+BasicAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+BasicAnimation.m"; sourceTree = "<group>"; };
+		7AC618282C2D8AA50030D9C9 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		7ACE2D992C2C02240092982F /* SocialCommunity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialCommunity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ACE2D9C2C2C02240092982F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7ACE2D9D2C2C02240092982F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -46,17 +54,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3ACF065F30A6ADBD0CD13DF /* Pods_SocialCommunity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7AC618232C2D85D70030D9C9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				7AC618242C2D87910030D9C9 /* UIView+BasicAnimation.h */,
+				7AC618252C2D87910030D9C9 /* UIView+BasicAnimation.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		7AC618272C2D8A230030D9C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7ACE2DB92C2C0D070092982F /* Language */,
+				7ACE2D9C2C2C02240092982F /* AppDelegate.h */,
+				7ACE2D9D2C2C02240092982F /* AppDelegate.m */,
+				7ACE2DAA2C2C02300092982F /* LaunchScreen.storyboard */,
+				7ACE2DA52C2C02240092982F /* Main.storyboard */,
+				7AC618282C2D8AA50030D9C9 /* PrefixHeader.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		7ACE2D902C2C02240092982F = {
 			isa = PBXGroup;
 			children = (
 				7ACE2D9B2C2C02240092982F /* SocialCommunity */,
 				7ACE2D9A2C2C02240092982F /* Products */,
+				BE1D4A530C243DB6AD102316 /* Frameworks */,
+				EB8BB7E67E211180DF1220D1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,13 +104,10 @@
 		7ACE2D9B2C2C02240092982F /* SocialCommunity */ = {
 			isa = PBXGroup;
 			children = (
-				7ACE2DB92C2C0D070092982F /* Language */,
-				7ACE2D9C2C2C02240092982F /* AppDelegate.h */,
-				7ACE2D9D2C2C02240092982F /* AppDelegate.m */,
+				7AC618272C2D8A230030D9C9 /* Supporting Files */,
+				7AC618232C2D85D70030D9C9 /* Category */,
 				7ACE2DC22C2C17D30092982F /* Launch */,
-				7ACE2DA52C2C02240092982F /* Main.storyboard */,
 				7ACE2DA82C2C02300092982F /* Assets.xcassets */,
-				7ACE2DAA2C2C02300092982F /* LaunchScreen.storyboard */,
 				7ACE2DAD2C2C02300092982F /* Info.plist */,
 				7ACE2DAE2C2C02300092982F /* main.m */,
 			);
@@ -106,6 +136,23 @@
 			path = Launch;
 			sourceTree = "<group>";
 		};
+		BE1D4A530C243DB6AD102316 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07B6F465446E28926F81E55B /* Pods_SocialCommunity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB8BB7E67E211180DF1220D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				231587F49CC8CA5C410BC8DB /* Pods-SocialCommunity.debug.xcconfig */,
+				525D8AAA4506DE7FD88C15D4 /* Pods-SocialCommunity.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7ACE2DB22C2C02300092982F /* Build configuration list for PBXNativeTarget "SocialCommunity" */;
 			buildPhases = (
+				F9245C129CE498058B2C12AF /* [CP] Check Pods Manifest.lock */,
 				7ACE2D952C2C02240092982F /* Sources */,
 				7ACE2D962C2C02240092982F /* Frameworks */,
 				7ACE2D972C2C02240092982F /* Resources */,
+				74E24CC945CEA2AE7F09C1C0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -175,6 +224,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		74E24CC945CEA2AE7F09C1C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SocialCommunity/Pods-SocialCommunity-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SocialCommunity/Pods-SocialCommunity-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SocialCommunity/Pods-SocialCommunity-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9245C129CE498058B2C12AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SocialCommunity-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7ACE2D952C2C02240092982F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -182,6 +273,7 @@
 			files = (
 				7ACE2DD82C2D09F10092982F /* LaunchCollectionCell.m in Sources */,
 				7ACE2DA42C2C02240092982F /* OpeningVC.m in Sources */,
+				7AC618262C2D87910030D9C9 /* UIView+BasicAnimation.m in Sources */,
 				7ACE2DD42C2D05B00092982F /* AppConfig.swift in Sources */,
 				7ACE2D9E2C2C02240092982F /* AppDelegate.m in Sources */,
 				7ACE2DAF2C2C02300092982F /* main.m in Sources */,
@@ -341,6 +433,7 @@
 		};
 		7ACE2DB32C2C02300092982F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 231587F49CC8CA5C410BC8DB /* Pods-SocialCommunity.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -350,6 +443,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = R9P7CJ8P5R;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SocialCommunity/Supporting Files/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SocialCommunity/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -377,6 +472,7 @@
 		};
 		7ACE2DB42C2C02300092982F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 525D8AAA4506DE7FD88C15D4 /* Pods-SocialCommunity.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -386,6 +482,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = R9P7CJ8P5R;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SocialCommunity/Supporting Files/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SocialCommunity/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
