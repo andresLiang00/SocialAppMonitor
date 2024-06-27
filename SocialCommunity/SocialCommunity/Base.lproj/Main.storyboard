@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dti-PE-dy7">
-                                <rect key="frame" x="8" y="108" width="398" height="398"/>
+                                <rect key="frame" x="8" y="119" width="377" height="377"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="dti-PE-dy7" secondAttribute="height" multiplier="1:1" priority="750" id="70d-pn-mgY"/>
@@ -32,7 +32,7 @@
                                 </collectionViewFlowLayout>
                             </collectionView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="LIv-oY-mgf">
-                                <rect key="frame" x="138" y="421" width="117" height="10"/>
+                                <rect key="frame" x="138.66666666666666" y="504" width="115.66666666666666" height="10"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="10" id="bqG-rh-5m2"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="jGo-kW-F49"/>
@@ -40,13 +40,12 @@
                             </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dti-PE-dy7" secondAttribute="bottom" constant="312" id="232-rl-axR"/>
-                            <constraint firstItem="dti-PE-dy7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="49" id="auV-To-SYX"/>
+                            <constraint firstItem="dti-PE-dy7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="60" id="auV-To-SYX"/>
                             <constraint firstItem="dti-PE-dy7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="hvt-hN-DeK"/>
-                            <constraint firstItem="LIv-oY-mgf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mS6-63-ygw"/>
-                            <constraint firstItem="LIv-oY-mgf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="xKO-Qn-6fh"/>
+                            <constraint firstItem="dti-PE-dy7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jaU-8S-JYF"/>
+                            <constraint firstItem="LIv-oY-mgf" firstAttribute="top" secondItem="dti-PE-dy7" secondAttribute="bottom" constant="8" id="u3r-ep-NZT"/>
                             <constraint firstItem="LIv-oY-mgf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xuU-2y-vLs"/>
                         </constraints>
                     </view>
@@ -61,8 +60,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

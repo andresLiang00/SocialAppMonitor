@@ -14,8 +14,9 @@
 		7ACE2DAC2C2C02300092982F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ACE2DAA2C2C02300092982F /* LaunchScreen.storyboard */; };
 		7ACE2DAF2C2C02300092982F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACE2DAE2C2C02300092982F /* main.m */; };
 		7ACE2DBC2C2C0D850092982F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7ACE2DBE2C2C0D850092982F /* Localizable.strings */; };
-		7ACE2DC92C2C18B70092982F /* OpenCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACE2DC72C2C18B70092982F /* OpenCollectionCell.m */; };
-		7ACE2DCA2C2C18B70092982F /* OpenCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ACE2DC82C2C18B70092982F /* OpenCollectionCell.xib */; };
+		7ACE2DD42C2D05B00092982F /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACE2DD32C2D05B00092982F /* AppConfig.swift */; };
+		7ACE2DD82C2D09F10092982F /* LaunchCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACE2DD62C2D09F10092982F /* LaunchCollectionCell.m */; };
+		7ACE2DD92C2D09F10092982F /* LaunchCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ACE2DD72C2D09F10092982F /* LaunchCollectionCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +34,11 @@
 		7ACE2DBF2C2C0DA00092982F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		7ACE2DC02C2C0DA10092982F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		7ACE2DC12C2C0DA10092982F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		7ACE2DC62C2C18B70092982F /* OpenCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCollectionCell.h; sourceTree = "<group>"; };
-		7ACE2DC72C2C18B70092982F /* OpenCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenCollectionCell.m; sourceTree = "<group>"; };
-		7ACE2DC82C2C18B70092982F /* OpenCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpenCollectionCell.xib; sourceTree = "<group>"; };
+		7ACE2DD02C2D05670092982F /* SocialCommunity-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SocialCommunity-Bridging-Header.h"; sourceTree = "<group>"; };
+		7ACE2DD32C2D05B00092982F /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		7ACE2DD52C2D09F10092982F /* LaunchCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchCollectionCell.h; sourceTree = "<group>"; };
+		7ACE2DD62C2D09F10092982F /* LaunchCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchCollectionCell.m; sourceTree = "<group>"; };
+		7ACE2DD72C2D09F10092982F /* LaunchCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchCollectionCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +74,7 @@
 				7ACE2DB92C2C0D070092982F /* Language */,
 				7ACE2D9C2C2C02240092982F /* AppDelegate.h */,
 				7ACE2D9D2C2C02240092982F /* AppDelegate.m */,
-				7ACE2DC22C2C17D30092982F /* OpeningUI */,
+				7ACE2DC22C2C17D30092982F /* Launch */,
 				7ACE2DA52C2C02240092982F /* Main.storyboard */,
 				7ACE2DA82C2C02300092982F /* Assets.xcassets */,
 				7ACE2DAA2C2C02300092982F /* LaunchScreen.storyboard */,
@@ -89,16 +92,18 @@
 			path = Language;
 			sourceTree = "<group>";
 		};
-		7ACE2DC22C2C17D30092982F /* OpeningUI */ = {
+		7ACE2DC22C2C17D30092982F /* Launch */ = {
 			isa = PBXGroup;
 			children = (
 				7ACE2DA22C2C02240092982F /* OpeningVC.h */,
 				7ACE2DA32C2C02240092982F /* OpeningVC.m */,
-				7ACE2DC62C2C18B70092982F /* OpenCollectionCell.h */,
-				7ACE2DC72C2C18B70092982F /* OpenCollectionCell.m */,
-				7ACE2DC82C2C18B70092982F /* OpenCollectionCell.xib */,
+				7ACE2DD02C2D05670092982F /* SocialCommunity-Bridging-Header.h */,
+				7ACE2DD32C2D05B00092982F /* AppConfig.swift */,
+				7ACE2DD52C2D09F10092982F /* LaunchCollectionCell.h */,
+				7ACE2DD62C2D09F10092982F /* LaunchCollectionCell.m */,
+				7ACE2DD72C2D09F10092982F /* LaunchCollectionCell.xib */,
 			);
-			path = OpeningUI;
+			path = Launch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,8 +167,8 @@
 			files = (
 				7ACE2DAC2C2C02300092982F /* LaunchScreen.storyboard in Resources */,
 				7ACE2DBC2C2C0D850092982F /* Localizable.strings in Resources */,
+				7ACE2DD92C2D09F10092982F /* LaunchCollectionCell.xib in Resources */,
 				7ACE2DA92C2C02300092982F /* Assets.xcassets in Resources */,
-				7ACE2DCA2C2C18B70092982F /* OpenCollectionCell.xib in Resources */,
 				7ACE2DA72C2C02240092982F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,8 +180,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ACE2DD82C2D09F10092982F /* LaunchCollectionCell.m in Sources */,
 				7ACE2DA42C2C02240092982F /* OpeningVC.m in Sources */,
-				7ACE2DC92C2C18B70092982F /* OpenCollectionCell.m in Sources */,
+				7ACE2DD42C2D05B00092982F /* AppConfig.swift in Sources */,
 				7ACE2D9E2C2C02240092982F /* AppDelegate.m in Sources */,
 				7ACE2DAF2C2C02300092982F /* main.m in Sources */,
 			);
@@ -362,7 +368,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = YYXX_Wildcard;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SocialCommunity/Launch/SocialCommunity-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -398,7 +404,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = YYXX_Wildcard;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SocialCommunity/Launch/SocialCommunity-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
