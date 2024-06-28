@@ -105,6 +105,13 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		7AC618382C2EA5DE0030D9C9 /* LoginClient */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LoginClient;
+			sourceTree = "<group>";
+		};
 		7ACE2D902C2C02240092982F = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +136,7 @@
 				7AC618272C2D8A230030D9C9 /* Supporting Files */,
 				7AC618232C2D85D70030D9C9 /* Category */,
 				7ACE2DC22C2C17D30092982F /* Launch */,
+				7AC618382C2EA5DE0030D9C9 /* LoginClient */,
 				7ACE2DA82C2C02300092982F /* Assets.xcassets */,
 				7ACE2DAD2C2C02300092982F /* Info.plist */,
 				7ACE2DAE2C2C02300092982F /* main.m */,

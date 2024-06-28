@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dti-PE-dy7">
-                                <rect key="frame" x="8" y="228" width="377" height="377"/>
+                                <rect key="frame" x="8" y="119" width="377" height="377"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="dti-PE-dy7" secondAttribute="height" multiplier="1:1" priority="750" id="70d-pn-mgY"/>
@@ -32,7 +32,7 @@
                                 </collectionViewFlowLayout>
                             </collectionView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="LIv-oY-mgf">
-                                <rect key="frame" x="138.66666666666666" y="613" width="115.66666666666666" height="10"/>
+                                <rect key="frame" x="138.66666666666666" y="504" width="115.66666666666666" height="10"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="10" id="bqG-rh-5m2"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="jGo-kW-F49"/>
@@ -51,7 +51,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZM-fq-Bhz">
-                                <rect key="frame" x="235" y="198" width="150" height="20"/>
+                                <rect key="frame" x="213" y="74" width="150" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="5re-Q8-BQa"/>
                                     <constraint firstAttribute="width" constant="150" id="OWN-1c-tni"/>
@@ -73,7 +73,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                         <constraints>
-                            <constraint firstItem="dti-PE-dy7" firstAttribute="top" secondItem="VZM-fq-Bhz" secondAttribute="bottom" constant="10" id="CGK-4a-yLo"/>
+                            <constraint firstItem="VZM-fq-Bhz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="3Ql-4w-daZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VZM-fq-Bhz" secondAttribute="trailing" constant="30" id="7F9-UL-boV"/>
+                            <constraint firstItem="dti-PE-dy7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="CGK-4a-yLo"/>
                             <constraint firstItem="Sdk-oC-6qO" firstAttribute="top" secondItem="LIv-oY-mgf" secondAttribute="bottom" priority="250" constant="60" id="GR9-BV-5k8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4y4-Wi-5c1" secondAttribute="bottom" constant="10" id="Mzn-NP-buu"/>
                             <constraint firstItem="4y4-Wi-5c1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NVG-sH-S7W"/>
@@ -82,7 +84,6 @@
                             <constraint firstItem="dti-PE-dy7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jaU-8S-JYF"/>
                             <constraint firstItem="Sdk-oC-6qO" firstAttribute="top" relation="greaterThanOrEqual" secondItem="LIv-oY-mgf" secondAttribute="bottom" constant="8" id="n5q-RO-CZk"/>
                             <constraint firstItem="4y4-Wi-5c1" firstAttribute="top" secondItem="Sdk-oC-6qO" secondAttribute="bottom" constant="60" id="ppX-70-vth"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VZM-fq-Bhz" secondAttribute="trailing" constant="8" id="qGp-nD-Dgo"/>
                             <constraint firstItem="LIv-oY-mgf" firstAttribute="top" secondItem="dti-PE-dy7" secondAttribute="bottom" constant="8" id="u3r-ep-NZT"/>
                             <constraint firstItem="LIv-oY-mgf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xuU-2y-vLs"/>
                         </constraints>
