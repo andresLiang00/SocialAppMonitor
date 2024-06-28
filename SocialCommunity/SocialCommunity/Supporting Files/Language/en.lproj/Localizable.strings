@@ -7,6 +7,9 @@
 */
 
 /* MARK: Opening UI */
+"_author_name_title_"                = "Designed by Tim";
 "_banner_1_title_"                   = "Document collaboration and exchange";
 "_banner_2_title_"                   = "Open and expanded chat address book";
 "_banner_3_title_"                   = "Online seminars and conferences";
+"_button_login_"                     = "Login / Register";
+"_visit_github_website_"             = "Visit Tim's Github";

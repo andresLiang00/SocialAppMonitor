@@ -7,6 +7,9 @@
 */
 
 /* MARK: Opening UI */
+"_author_name_title_"                = "由 Tim 进行开发";
 "_banner_1_title_"                   = "文件协作与交换";
 "_banner_2_title_"                   = "开放拓展的聊天通讯录";
 "_banner_3_title_"                   = "在线研讨与会议";
+"_button_login_"                     = "登录 / 注册";
+"_visit_github_website_"             = "访问Tim的Github主页";

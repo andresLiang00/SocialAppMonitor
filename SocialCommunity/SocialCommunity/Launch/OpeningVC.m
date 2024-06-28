@@ -20,6 +20,11 @@
 @property (nonatomic, strong) NSArray *openbannerTitles;
 // banner轮播时间
 @property (nonatomic, strong) NSTimer *bannerTimer;
+// 登入按钮接口
+@property (weak, nonatomic) IBOutlet UIButton *buttonLoginIn;
+// 访问作者的主页
+@property (weak, nonatomic) IBOutlet UILabel *labelAuthor;
+@property (weak, nonatomic) IBOutlet UIButton *buttonMyHost;
 
 @end
 
@@ -33,14 +38,35 @@ NSString *identifier = @"OpenCell";
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = AppColor.shared.launchColor;
+    _labelAuthor.text = NSLocalizedString(@"_author_name_title_", @"");
+    _labelAuthor.textColor = AppColor.shared.textWhiteColor;
+    _labelAuthor.font = [UIFont fontWithName:AppFont.shared.font_Inconsolata_Light size:18];
+    /* banner */
     [_bannerView registerNib:[UINib nibWithNibName:@"LaunchCollectionCell" bundle:nil] forCellWithReuseIdentifier:identifier];
     _bannerView.dataSource = self;
     _bannerView.delegate = self;
     _bannerView.backgroundColor = AppColor.shared.launchColor;
+    /* dataSources & text */
     self.openImageSets = @[[UIImage imageNamed:@"banner1"],[UIImage imageNamed:@"banner2"],[UIImage imageNamed:@"banner3"]];
     self.openbannerTitles = @[NSLocalizedString(@"_banner_1_title_", @""), NSLocalizedString(@"_banner_2_title_", @""), NSLocalizedString(@"_banner_3_title_", @"")];
     self.bannerTimer = [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(bannerScroll) userInfo:nil repeats:true];
     
+    /* Login button */
+    _buttonLoginIn.layer.cornerRadius = 20.0f;
+    [_buttonLoginIn setBackgroundColor:AppColor.shared.borderWhiteColor];
+    NSAttributedString *login_attribute = [[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"_button_login_", @"") attributes:@{NSForegroundColorAttributeName:AppColor.shared.launchColor,NSFontAttributeName:[UIFont fontWithName:AppFont.shared.font_Inconsolata_Regular size:18]}];
+    [_buttonLoginIn setAttributedTitle:login_attribute forState:UIControlStateNormal];
+    
+    
+    NSMutableAttributedString *host_attribute =  [[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"_visit_github_website_", @"") attributes:@{NSForegroundColorAttributeName:[UIColor grayColor],NSFontAttributeName:[UIFont fontWithName:AppFont.shared.font_Inconsolata_Light size:15], NSUnderlineStyleAttributeName:@(NSUnderlineStyleSingle)}];
+    [_buttonMyHost setAttributedTitle:host_attribute forState:UIControlStateNormal];
+    
+    
+}
+
+# pragma mark --- 访问主页的跳转
+- (IBAction)visitMyHost:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:hostUrl]];
 }
 
 # pragma mark --- 轮播图timer的selector
@@ -88,6 +114,12 @@ NSString *identifier = @"OpenCell";
 - (void)destoryTimer {
     [_bannerTimer invalidate];
     _bannerTimer = nil;
+}
+
+# pragma mark --- 点击空白事件
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
 }
 
 @end

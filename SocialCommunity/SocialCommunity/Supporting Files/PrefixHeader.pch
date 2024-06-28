@@ -13,4 +13,5 @@
 
 #endif /* PrefixHeader_pch */
 
+#define hostUrl @"https://github.com/andresLiang00/SocialAppMonitor"
 #import "UIView+BasicAnimation.h"

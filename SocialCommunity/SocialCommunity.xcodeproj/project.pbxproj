@@ -8,9 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		7AC618262C2D87910030D9C9 /* UIView+BasicAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC618252C2D87910030D9C9 /* UIView+BasicAnimation.m */; };
+		7AC618332C2E6D170030D9C9 /* Inconsolata-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AC6182E2C2E6D170030D9C9 /* Inconsolata-Light.ttf */; };
+		7AC618342C2E6D170030D9C9 /* Inconsolata-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AC6182F2C2E6D170030D9C9 /* Inconsolata-ExtraLight.ttf */; };
+		7AC618352C2E6D170030D9C9 /* Inconsolata-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AC618302C2E6D170030D9C9 /* Inconsolata-Regular.ttf */; };
+		7AC618362C2E6D170030D9C9 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AC618312C2E6D170030D9C9 /* Lato-Bold.ttf */; };
+		7AC618372C2E6D170030D9C9 /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AC618322C2E6D170030D9C9 /* Lato-Thin.ttf */; };
 		7ACE2D9E2C2C02240092982F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACE2D9D2C2C02240092982F /* AppDelegate.m */; };
 		7ACE2DA42C2C02240092982F /* OpeningVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACE2DA32C2C02240092982F /* OpeningVC.m */; };
-		7ACE2DA72C2C02240092982F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ACE2DA52C2C02240092982F /* Main.storyboard */; };
+		7ACE2DA72C2C02240092982F /* OpeningVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ACE2DA52C2C02240092982F /* OpeningVC.storyboard */; };
 		7ACE2DA92C2C02300092982F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ACE2DA82C2C02300092982F /* Assets.xcassets */; };
 		7ACE2DAC2C2C02300092982F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ACE2DAA2C2C02300092982F /* LaunchScreen.storyboard */; };
 		7ACE2DAF2C2C02300092982F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ACE2DAE2C2C02300092982F /* main.m */; };
@@ -28,18 +33,23 @@
 		7AC618242C2D87910030D9C9 /* UIView+BasicAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+BasicAnimation.h"; sourceTree = "<group>"; };
 		7AC618252C2D87910030D9C9 /* UIView+BasicAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+BasicAnimation.m"; sourceTree = "<group>"; };
 		7AC618282C2D8AA50030D9C9 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		7AC6182E2C2E6D170030D9C9 /* Inconsolata-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inconsolata-Light.ttf"; sourceTree = "<group>"; };
+		7AC6182F2C2E6D170030D9C9 /* Inconsolata-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inconsolata-ExtraLight.ttf"; sourceTree = "<group>"; };
+		7AC618302C2E6D170030D9C9 /* Inconsolata-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inconsolata-Regular.ttf"; sourceTree = "<group>"; };
+		7AC618312C2E6D170030D9C9 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		7AC618322C2E6D170030D9C9 /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
 		7ACE2D992C2C02240092982F /* SocialCommunity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialCommunity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ACE2D9C2C2C02240092982F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7ACE2D9D2C2C02240092982F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7ACE2DA22C2C02240092982F /* OpeningVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpeningVC.h; sourceTree = "<group>"; };
 		7ACE2DA32C2C02240092982F /* OpeningVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpeningVC.m; sourceTree = "<group>"; };
-		7ACE2DA62C2C02240092982F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7ACE2DA62C2C02240092982F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/OpeningVC.storyboard; sourceTree = "<group>"; };
 		7ACE2DA82C2C02300092982F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7ACE2DAB2C2C02300092982F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7ACE2DAD2C2C02300092982F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7ACE2DAE2C2C02300092982F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7ACE2DBD2C2C0D850092982F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		7ACE2DBF2C2C0DA00092982F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		7ACE2DBF2C2C0DA00092982F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/OpeningVC.strings"; sourceTree = "<group>"; };
 		7ACE2DC02C2C0DA10092982F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		7ACE2DC12C2C0DA10092982F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		7ACE2DD02C2D05670092982F /* SocialCommunity-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SocialCommunity-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -73,14 +83,26 @@
 		7AC618272C2D8A230030D9C9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7AC6182D2C2E6CC00030D9C9 /* Font */,
 				7ACE2DB92C2C0D070092982F /* Language */,
 				7ACE2D9C2C2C02240092982F /* AppDelegate.h */,
 				7ACE2D9D2C2C02240092982F /* AppDelegate.m */,
 				7ACE2DAA2C2C02300092982F /* LaunchScreen.storyboard */,
-				7ACE2DA52C2C02240092982F /* Main.storyboard */,
 				7AC618282C2D8AA50030D9C9 /* PrefixHeader.pch */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7AC6182D2C2E6CC00030D9C9 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				7AC6182F2C2E6D170030D9C9 /* Inconsolata-ExtraLight.ttf */,
+				7AC6182E2C2E6D170030D9C9 /* Inconsolata-Light.ttf */,
+				7AC618302C2E6D170030D9C9 /* Inconsolata-Regular.ttf */,
+				7AC618312C2E6D170030D9C9 /* Lato-Bold.ttf */,
+				7AC618322C2E6D170030D9C9 /* Lato-Thin.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		7ACE2D902C2C02240092982F = {
@@ -125,6 +147,7 @@
 		7ACE2DC22C2C17D30092982F /* Launch */ = {
 			isa = PBXGroup;
 			children = (
+				7ACE2DA52C2C02240092982F /* OpeningVC.storyboard */,
 				7ACE2DA22C2C02240092982F /* OpeningVC.h */,
 				7ACE2DA32C2C02240092982F /* OpeningVC.m */,
 				7ACE2DD02C2D05670092982F /* SocialCommunity-Bridging-Header.h */,
@@ -215,10 +238,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				7ACE2DAC2C2C02300092982F /* LaunchScreen.storyboard in Resources */,
+				7AC618332C2E6D170030D9C9 /* Inconsolata-Light.ttf in Resources */,
 				7ACE2DBC2C2C0D850092982F /* Localizable.strings in Resources */,
+				7AC618342C2E6D170030D9C9 /* Inconsolata-ExtraLight.ttf in Resources */,
 				7ACE2DD92C2D09F10092982F /* LaunchCollectionCell.xib in Resources */,
+				7AC618352C2E6D170030D9C9 /* Inconsolata-Regular.ttf in Resources */,
 				7ACE2DA92C2C02300092982F /* Assets.xcassets in Resources */,
-				7ACE2DA72C2C02240092982F /* Main.storyboard in Resources */,
+				7AC618372C2E6D170030D9C9 /* Lato-Thin.ttf in Resources */,
+				7AC618362C2E6D170030D9C9 /* Lato-Bold.ttf in Resources */,
+				7ACE2DA72C2C02240092982F /* OpeningVC.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,13 +311,13 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7ACE2DA52C2C02240092982F /* Main.storyboard */ = {
+		7ACE2DA52C2C02240092982F /* OpeningVC.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				7ACE2DA62C2C02240092982F /* Base */,
 				7ACE2DBF2C2C0DA00092982F /* zh-Hans */,
 			);
-			name = Main.storyboard;
+			name = OpeningVC.storyboard;
 			sourceTree = "<group>";
 		};
 		7ACE2DAA2C2C02300092982F /* LaunchScreen.storyboard */ = {
@@ -443,13 +471,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = R9P7CJ8P5R;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/SocialCommunity/Supporting Files/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SocialCommunity/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = OpeningVC;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -482,13 +511,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = R9P7CJ8P5R;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/SocialCommunity/Supporting Files/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SocialCommunity/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = OpeningVC;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
