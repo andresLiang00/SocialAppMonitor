@@ -7,7 +7,6 @@
 
 #import "OpeningVC.h"
 #import "LaunchCollectionCell.h"
-#import "SocialCommunity-Swift.h"
 
 @interface OpeningVC ()<UICollectionViewDelegateFlowLayout,UICollectionViewDataSource>
 
@@ -37,6 +36,7 @@ NSString *identifier = @"OpenCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = @"SocialCommunity";
     self.view.backgroundColor = AppColor.shared.launchColor;
     _labelAuthor.text = NSLocalizedString(@"_author_name_title_", @"");
     _labelAuthor.textColor = AppColor.shared.textWhiteColor;
@@ -119,6 +119,11 @@ NSString *identifier = @"OpenCell";
 # pragma mark --- 点击空白事件
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+}
+
+# pragma mark --- 登录跳转
+- (IBAction)onOpenLogin:(id)sender {
     
 }
 

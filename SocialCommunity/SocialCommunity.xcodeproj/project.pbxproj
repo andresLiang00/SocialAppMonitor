@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		228036202C32959A00702F39 /* SCLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 2280361F2C32959A00702F39 /* SCLogin.m */; };
+		228036232C32A25900702F39 /* SCNavMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 228036222C32A25900702F39 /* SCNavMain.m */; };
 		7AC618262C2D87910030D9C9 /* UIView+BasicAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC618252C2D87910030D9C9 /* UIView+BasicAnimation.m */; };
 		7AC618332C2E6D170030D9C9 /* Inconsolata-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AC6182E2C2E6D170030D9C9 /* Inconsolata-Light.ttf */; };
 		7AC618342C2E6D170030D9C9 /* Inconsolata-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AC6182F2C2E6D170030D9C9 /* Inconsolata-ExtraLight.ttf */; };
@@ -28,6 +30,10 @@
 
 /* Begin PBXFileReference section */
 		07B6F465446E28926F81E55B /* Pods_SocialCommunity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialCommunity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2280361E2C32959A00702F39 /* SCLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCLogin.h; sourceTree = "<group>"; };
+		2280361F2C32959A00702F39 /* SCLogin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCLogin.m; sourceTree = "<group>"; };
+		228036212C32A25900702F39 /* SCNavMain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCNavMain.h; sourceTree = "<group>"; };
+		228036222C32A25900702F39 /* SCNavMain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCNavMain.m; sourceTree = "<group>"; };
 		231587F49CC8CA5C410BC8DB /* Pods-SocialCommunity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialCommunity.debug.xcconfig"; path = "Target Support Files/Pods-SocialCommunity/Pods-SocialCommunity.debug.xcconfig"; sourceTree = "<group>"; };
 		525D8AAA4506DE7FD88C15D4 /* Pods-SocialCommunity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialCommunity.release.xcconfig"; path = "Target Support Files/Pods-SocialCommunity/Pods-SocialCommunity.release.xcconfig"; sourceTree = "<group>"; };
 		7AC618242C2D87910030D9C9 /* UIView+BasicAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+BasicAnimation.h"; sourceTree = "<group>"; };
@@ -71,6 +77,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2280360E2C32909E00702F39 /* IOSClient */ = {
+			isa = PBXGroup;
+			children = (
+				2280361E2C32959A00702F39 /* SCLogin.h */,
+				2280361F2C32959A00702F39 /* SCLogin.m */,
+			);
+			path = IOSClient;
+			sourceTree = "<group>";
+		};
 		7AC618232C2D85D70030D9C9 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,13 +120,6 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
-		7AC618382C2EA5DE0030D9C9 /* LoginClient */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = LoginClient;
-			sourceTree = "<group>";
-		};
 		7ACE2D902C2C02240092982F = {
 			isa = PBXGroup;
 			children = (
@@ -136,7 +144,7 @@
 				7AC618272C2D8A230030D9C9 /* Supporting Files */,
 				7AC618232C2D85D70030D9C9 /* Category */,
 				7ACE2DC22C2C17D30092982F /* Launch */,
-				7AC618382C2EA5DE0030D9C9 /* LoginClient */,
+				2280360E2C32909E00702F39 /* IOSClient */,
 				7ACE2DA82C2C02300092982F /* Assets.xcassets */,
 				7ACE2DAD2C2C02300092982F /* Info.plist */,
 				7ACE2DAE2C2C02300092982F /* main.m */,
@@ -163,6 +171,8 @@
 				7ACE2DD52C2D09F10092982F /* LaunchCollectionCell.h */,
 				7ACE2DD62C2D09F10092982F /* LaunchCollectionCell.m */,
 				7ACE2DD72C2D09F10092982F /* LaunchCollectionCell.xib */,
+				228036212C32A25900702F39 /* SCNavMain.h */,
+				228036222C32A25900702F39 /* SCNavMain.m */,
 			);
 			path = Launch;
 			sourceTree = "<group>";
@@ -310,8 +320,10 @@
 				7ACE2DD82C2D09F10092982F /* LaunchCollectionCell.m in Sources */,
 				7ACE2DA42C2C02240092982F /* OpeningVC.m in Sources */,
 				7AC618262C2D87910030D9C9 /* UIView+BasicAnimation.m in Sources */,
+				228036202C32959A00702F39 /* SCLogin.m in Sources */,
 				7ACE2DD42C2D05B00092982F /* AppConfig.swift in Sources */,
 				7ACE2D9E2C2C02240092982F /* AppDelegate.m in Sources */,
+				228036232C32A25900702F39 /* SCNavMain.m in Sources */,
 				7ACE2DAF2C2C02300092982F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

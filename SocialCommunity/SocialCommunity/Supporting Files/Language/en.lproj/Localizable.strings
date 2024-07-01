@@ -13,3 +13,10 @@
 "_banner_3_title_"                   = "Online seminars and conferences";
 "_button_login_"                     = "Login / Register";
 "_visit_github_website_"             = "Visit Tim's Github";
+"_login_page_"                       = "Login / Register your account";
+"_login_mode_"                       = "Login";
+"_register_mode_"                    = "Register";
+"_placeholder_account_"              = "Please enter your account name";
+"_placeholder_register_account_"     = "Please enter a new account name";
+"_placeholder_password_"             = "Please enter your password";
+"_placeholder_register_password_"    = "Please enter a new password";

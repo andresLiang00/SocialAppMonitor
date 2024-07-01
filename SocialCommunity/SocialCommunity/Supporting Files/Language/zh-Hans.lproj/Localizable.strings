@@ -13,3 +13,10 @@
 "_banner_3_title_"                   = "在线研讨与会议";
 "_button_login_"                     = "登录 / 注册";
 "_visit_github_website_"             = "访问Tim的Github主页";
+"_login_page_"                       = "注册或登录您的账号";
+"_login_mode_"                       = "登录";
+"_register_mode_"                    = "注册";
+"_placeholder_account_"              = "请输入您的账号名称";
+"_placeholder_register_account_"     = "请输入一个新的账号";
+"_placeholder_password_"             = "请输入您的密码";
+"_placeholder_register_password_"    = "请输入一个新的密码";

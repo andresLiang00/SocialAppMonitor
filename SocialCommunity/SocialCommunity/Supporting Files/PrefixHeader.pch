@@ -14,4 +14,7 @@
 #endif /* PrefixHeader_pch */
 
 #define hostUrl @"https://github.com/andresLiang00/SocialAppMonitor"
-#import "UIView+BasicAnimation.h"
+
+#import "SocialCommunity-Swift.h"
+#import "OpeningVC.h"
+#import "SCLogin.h"
