@@ -20,3 +20,6 @@
 "_placeholder_register_account_"     = "Please enter a new account name";
 "_placeholder_password_"             = "Please enter your password";
 "_placeholder_register_password_"    = "Please enter a new password";
+"_wechat_login_"                     = " Wechat login";
+"_ali_login_"                        = " Alipay login";
+"_login_label_hint_"                 = "Please enter your account and password";

@@ -20,3 +20,6 @@
 "_placeholder_register_account_"     = "请输入一个新的账号";
 "_placeholder_password_"             = "请输入您的密码";
 "_placeholder_register_password_"    = "请输入一个新的密码";
+"_wechat_login_"                     = " 微信登录";
+"_ali_login_"                        = " 支付宝登录";
+"_login_label_hint_"                 = "请输入用户名和密码";

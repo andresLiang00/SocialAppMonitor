@@ -6,6 +6,7 @@ target 'SocialCommunity' do
   use_frameworks!
   pod 'AFNetworking'
   pod 'SVProgressHUD'
+  pod 'WechatOpenSDK-XCFramework'
   # Pods for SocialCommunity
 
 end

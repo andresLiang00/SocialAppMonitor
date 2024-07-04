@@ -31,6 +31,9 @@ class AppColor: NSObject {
     
     // borderColor: LightGray
     @objc public let borderLightGrayColor: UIColor = UIColor(red: 147.0 / 255.0, green: 147.0 / 255.0, blue: 147.0 / 255.0, alpha: 1.0)
+    
+    // borderColor: Green
+    @objc public let GreenColor: UIColor =  UIColor(red: 90.0 / 255.0, green: 185.0 / 255.0, blue: 70.0 / 255.0, alpha: 1.0)
 }
 
 class AppFont: NSObject {

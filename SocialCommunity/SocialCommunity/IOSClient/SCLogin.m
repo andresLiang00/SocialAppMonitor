@@ -6,6 +6,8 @@
 //
 
 #import "SCLogin.h"
+/* 支付宝SDK引入 */
+#import <AFServiceSDK/AFServiceSDK.h>
 
 @interface SCLogin ()
 
@@ -17,6 +19,10 @@
 @property (weak, nonatomic) IBOutlet UIView *passwordView;
 @property (weak, nonatomic) IBOutlet UIImageView *iconAccount;
 @property (weak, nonatomic) IBOutlet UIImageView *iconPassword;
+/* 登录结果提示 */
+@property (weak, nonatomic) IBOutlet UILabel *labelLoginHint;
+@property (weak, nonatomic) IBOutlet UIButton *butWechat;
+@property (weak, nonatomic) IBOutlet UIButton *butAlipay;
 @property (weak, nonatomic) IBOutlet UIButton *butLogin;
 @property (weak, nonatomic) IBOutlet UITextField *TFaccount;
 @property (weak, nonatomic) IBOutlet UITextField *TFpassword;
@@ -24,6 +30,21 @@
 @end
 
 @implementation SCLogin
+
+/* 微信请求登录 */
+- (IBAction)requestWechatLogin:(id)sender {
+    
+}
+
+/* 支付宝请求登录 */
+- (IBAction)requestAlipayLogin:(id)sender {
+    
+}
+
+/* 账号密码登录/注册 */
+- (IBAction)requestAccountLogin:(id)sender {
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,22 +55,28 @@
     [self viewDesignChange];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 - (void)viewDesignChange{
+    self.labelLoginHint.attributedText = [[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"_login_label_hint_", @"") attributes:@{ NSFontAttributeName:[UIFont fontWithName:AppFont.shared.font_Latin_Thin size:12]}];
+    
     self.buttonLoginTag.backgroundColor = [UIColor whiteColor];
     [self.buttonLoginTag setAttributedTitle: [[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"_login_mode_", @"") attributes:@{NSForegroundColorAttributeName:AppColor.shared.launchColor,NSFontAttributeName:[UIFont fontWithName:AppFont.shared.font_Latin_Thin size:18]}] forState:UIControlStateNormal];
     self.buttonRegisterTag.backgroundColor = AppColor.shared.borderLightGrayColor;
     [self.buttonRegisterTag setAttributedTitle: [[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"_register_mode_", @"") attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont fontWithName:AppFont.shared.font_Latin_Thin size:18]}] forState:UIControlStateNormal];
+    
     [self viewAccountChange];
+    
+    self.butWechat.layer.cornerRadius = 15.f;
+    [self.butWechat setAttributedTitle:[[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"_wechat_login_", @"") attributes:@{NSForegroundColorAttributeName:AppColor.shared.textWhiteColor, NSFontAttributeName:[UIFont fontWithName:AppFont.shared.font_Latin_Bold size:12]}] forState:UIControlStateNormal];
+//    [self.butWechat setTitle:NSLocalizedString(@"_wechat_login_", @"") forState:UIControlStateNormal];
+    
+    self.butAlipay.layer.cornerRadius = 15.f;
+    [self.butAlipay setAttributedTitle:[[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"_ali_login_", @"") attributes:@{NSForegroundColorAttributeName:AppColor.shared.textWhiteColor, NSFontAttributeName:[UIFont fontWithName:AppFont.shared.font_Latin_Bold size:12]}] forState:UIControlStateNormal];
+//    [self.butWechat setTitle:NSLocalizedString(@"_wechat_login_", @"") forState:UIControlStateNormal];
+    
+    self.butLogin.layer.cornerRadius = 10.0f;
+    [self.butLogin setBackgroundColor:AppColor.shared.launchColor];
+    [self.butLogin setAttributedTitle: [[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"_login_mode_", @"") attributes:@{NSForegroundColorAttributeName:AppColor.shared.textWhiteColor,NSFontAttributeName:[UIFont fontWithName:AppFont.shared.font_Latin_Thin size:18]}] forState:UIControlStateNormal];
+    
     
 }
 
@@ -64,7 +91,6 @@
     self.TFaccount.text = @"";
     self.TFaccount.attributedPlaceholder = [[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"_placeholder_account_", @"") attributes:@{NSForegroundColorAttributeName:[UIColor grayColor]}];
     [self viewPasswordChange];
-    [self.butLogin setAttributedTitle: [[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"_login_mode_", @"") attributes:@{NSForegroundColorAttributeName:AppColor.shared.launchColor,NSFontAttributeName:[UIFont fontWithName:AppFont.shared.font_Latin_Thin size:18]}] forState:UIControlStateNormal];
 }
 
 - (void)viewPasswordChange {
@@ -86,13 +112,17 @@
     self.buttonLoginTag.backgroundColor = [UIColor whiteColor];
     [self.buttonLoginTag setTitleColor:AppColor.shared.launchColor forState:UIControlStateNormal];
     [self.buttonLoginTag setAttributedTitle: [[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"_login_mode_", @"") attributes:@{NSForegroundColorAttributeName:AppColor.shared.launchColor,NSFontAttributeName:[UIFont fontWithName:AppFont.shared.font_Latin_Thin size:18]}] forState:UIControlStateNormal];
+    /* 注册按钮变灰*/
     self.buttonRegisterTag.backgroundColor = AppColor.shared.borderLightGrayColor;
     [self.buttonRegisterTag setAttributedTitle: [[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"_register_mode_", @"") attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont fontWithName:AppFont.shared.font_Latin_Thin size:18]}] forState:UIControlStateNormal];
+    /* 重置提示语 */
     self.TFaccount.text = @"";
     self.TFaccount.attributedPlaceholder = [[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"_placeholder_account_", @"") attributes:@{NSForegroundColorAttributeName:[UIColor grayColor]}];
+    
     self.TFpassword.text = @"";
     self.TFpassword.attributedPlaceholder = [[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"_placeholder_password_", @"") attributes:@{NSForegroundColorAttributeName:[UIColor grayColor]}];
-    [self.butLogin setAttributedTitle: [[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"_login_mode_", @"") attributes:@{NSForegroundColorAttributeName:AppColor.shared.launchColor,NSFontAttributeName:[UIFont fontWithName:AppFont.shared.font_Latin_Thin size:18]}] forState:UIControlStateNormal];
+    
+    [self.butLogin setAttributedTitle: [[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"_login_mode_", @"") attributes:@{NSForegroundColorAttributeName:AppColor.shared.textWhiteColor,NSFontAttributeName:[UIFont fontWithName:AppFont.shared.font_Latin_Thin size:18]}] forState:UIControlStateNormal];
 }
 
 
@@ -101,14 +131,17 @@
     /* 切换了模式 */
     self.buttonRegisterTag.backgroundColor = [UIColor whiteColor];
     [self.buttonRegisterTag setAttributedTitle: [[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"_register_mode_", @"") attributes:@{NSForegroundColorAttributeName:AppColor.shared.launchColor,NSFontAttributeName:[UIFont fontWithName:AppFont.shared.font_Latin_Thin size:18]}] forState:UIControlStateNormal];
+    /* 登录按钮变灰*/
     self.buttonLoginTag.backgroundColor = AppColor.shared.borderLightGrayColor;
     [self.buttonLoginTag setAttributedTitle: [[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"_login_mode_", @"") attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont fontWithName:AppFont.shared.font_Latin_Thin size:18]}] forState:UIControlStateNormal];
+    /* 重置提示语 */
     self.TFaccount.text = @"";
     self.TFaccount.attributedPlaceholder = [[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"_placeholder_register_account_", @"") attributes:@{NSForegroundColorAttributeName:[UIColor grayColor]}];
+    
     self.TFpassword.text = @"";
     self.TFpassword.attributedPlaceholder = [[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"_placeholder_register_password_", @"") attributes:@{NSForegroundColorAttributeName:[UIColor grayColor]}];
-    [self.butLogin setAttributedTitle: [[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"_register_mode_", @"") attributes:@{NSForegroundColorAttributeName:AppColor.shared.launchColor,NSFontAttributeName:[UIFont fontWithName:AppFont.shared.font_Latin_Thin size:18]}] forState:UIControlStateNormal];
     
+    [self.butLogin setAttributedTitle: [[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"_register_mode_", @"") attributes:@{NSForegroundColorAttributeName:AppColor.shared.textWhiteColor,NSFontAttributeName:[UIFont fontWithName:AppFont.shared.font_Latin_Thin size:18]}] forState:UIControlStateNormal];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

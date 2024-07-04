@@ -17,20 +17,24 @@ PODS:
   - SVProgressHUD (2.3.1):
     - SVProgressHUD/Core (= 2.3.1)
   - SVProgressHUD/Core (2.3.1)
+  - WechatOpenSDK-XCFramework (2.0.4)
 
 DEPENDENCIES:
   - AFNetworking
   - SVProgressHUD
+  - WechatOpenSDK-XCFramework
 
 SPEC REPOS:
   trunk:
     - AFNetworking
     - SVProgressHUD
+    - WechatOpenSDK-XCFramework
 
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
   SVProgressHUD: 4837c74bdfe2e51e8821c397825996a8d7de6e22
+  WechatOpenSDK-XCFramework: 36fb2bea0754266c17184adf4963d7e6ff98b69f
 
-PODFILE CHECKSUM: 1e0356e35552293f4ff9e2a80bae44e4bf7ca2c5
+PODFILE CHECKSUM: e88ec71a7f0c2491e998b292fe53f60e914156ae
 
 COCOAPODS: 1.15.2
