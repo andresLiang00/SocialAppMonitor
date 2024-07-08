@@ -18,3 +18,5 @@
 #import "SocialCommunity-Swift.h"
 #import "OpeningVC.h"
 #import "SCLogin.h"
+#import "SCMainTabBarController.h"
+#import "SCMainTabBar.h"

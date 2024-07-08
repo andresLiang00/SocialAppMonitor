@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		228036202C32959A00702F39 /* SCLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 2280361F2C32959A00702F39 /* SCLogin.m */; };
+		221982A92C3BBBFD0057A9BC /* SCLoginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 221982A82C3BBBFD0057A9BC /* SCLoginView.storyboard */; };
+		221982AC2C3BBF960057A9BC /* SCLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 221982AB2C3BBF960057A9BC /* SCLogin.m */; };
 		228036232C32A25900702F39 /* SCNavMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 228036222C32A25900702F39 /* SCNavMain.m */; };
-		22C8576D2C3674BC00967E4E /* SCLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22C8576C2C3674BC00967E4E /* SCLogin.storyboard */; };
 		22C857702C36CD0600967E4E /* AFServiceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C8576F2C36CD0600967E4E /* AFServiceSDK.framework */; };
+		22D17D212C37D390005FDAE1 /* SCMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D17D202C37D390005FDAE1 /* SCMainTabBarController.m */; };
+		22D17D262C37D3FC005FDAE1 /* IOSClientMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D17D252C37D3FC005FDAE1 /* IOSClientMain.storyboard */; };
+		22D17D292C37DAB6005FDAE1 /* SCMainTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D17D282C37DAB6005FDAE1 /* SCMainTabBar.m */; };
+		22D17D2D2C3B88BC005FDAE1 /* NCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D17D2C2C3B88BC005FDAE1 /* NCMessage.m */; };
+		22D17D2F2C3B88CC005FDAE1 /* NCMessage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D17D2E2C3B88CC005FDAE1 /* NCMessage.storyboard */; };
 		7AC618262C2D87910030D9C9 /* UIView+BasicAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC618252C2D87910030D9C9 /* UIView+BasicAnimation.m */; };
 		7AC618332C2E6D170030D9C9 /* Inconsolata-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AC6182E2C2E6D170030D9C9 /* Inconsolata-Light.ttf */; };
 		7AC618342C2E6D170030D9C9 /* Inconsolata-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AC6182F2C2E6D170030D9C9 /* Inconsolata-ExtraLight.ttf */; };
@@ -32,12 +37,20 @@
 
 /* Begin PBXFileReference section */
 		07B6F465446E28926F81E55B /* Pods_SocialCommunity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialCommunity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2280361E2C32959A00702F39 /* SCLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCLogin.h; sourceTree = "<group>"; };
-		2280361F2C32959A00702F39 /* SCLogin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCLogin.m; sourceTree = "<group>"; };
+		221982A82C3BBBFD0057A9BC /* SCLoginView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SCLoginView.storyboard; sourceTree = "<group>"; };
+		221982AA2C3BBF960057A9BC /* SCLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCLogin.h; sourceTree = "<group>"; };
+		221982AB2C3BBF960057A9BC /* SCLogin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCLogin.m; sourceTree = "<group>"; };
 		228036212C32A25900702F39 /* SCNavMain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCNavMain.h; sourceTree = "<group>"; };
 		228036222C32A25900702F39 /* SCNavMain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCNavMain.m; sourceTree = "<group>"; };
-		22C8576C2C3674BC00967E4E /* SCLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SCLogin.storyboard; sourceTree = "<group>"; };
 		22C8576F2C36CD0600967E4E /* AFServiceSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AFServiceSDK.framework; sourceTree = "<group>"; };
+		22D17D1F2C37D390005FDAE1 /* SCMainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCMainTabBarController.h; sourceTree = "<group>"; };
+		22D17D202C37D390005FDAE1 /* SCMainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCMainTabBarController.m; sourceTree = "<group>"; };
+		22D17D252C37D3FC005FDAE1 /* IOSClientMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IOSClientMain.storyboard; sourceTree = "<group>"; };
+		22D17D272C37DAB6005FDAE1 /* SCMainTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCMainTabBar.h; sourceTree = "<group>"; };
+		22D17D282C37DAB6005FDAE1 /* SCMainTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCMainTabBar.m; sourceTree = "<group>"; };
+		22D17D2B2C3B88BC005FDAE1 /* NCMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NCMessage.h; sourceTree = "<group>"; };
+		22D17D2C2C3B88BC005FDAE1 /* NCMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NCMessage.m; sourceTree = "<group>"; };
+		22D17D2E2C3B88CC005FDAE1 /* NCMessage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NCMessage.storyboard; sourceTree = "<group>"; };
 		231587F49CC8CA5C410BC8DB /* Pods-SocialCommunity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialCommunity.debug.xcconfig"; path = "Target Support Files/Pods-SocialCommunity/Pods-SocialCommunity.debug.xcconfig"; sourceTree = "<group>"; };
 		525D8AAA4506DE7FD88C15D4 /* Pods-SocialCommunity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialCommunity.release.xcconfig"; path = "Target Support Files/Pods-SocialCommunity/Pods-SocialCommunity.release.xcconfig"; sourceTree = "<group>"; };
 		7AC618242C2D87910030D9C9 /* UIView+BasicAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+BasicAnimation.h"; sourceTree = "<group>"; };
@@ -85,9 +98,8 @@
 		2280360E2C32909E00702F39 /* IOSClient */ = {
 			isa = PBXGroup;
 			children = (
-				2280361E2C32959A00702F39 /* SCLogin.h */,
-				2280361F2C32959A00702F39 /* SCLogin.m */,
-				22C8576C2C3674BC00967E4E /* SCLogin.storyboard */,
+				22D17D1E2C37D30E005FDAE1 /* MainUI */,
+				22D17D1D2C37D304005FDAE1 /* Login */,
 			);
 			path = IOSClient;
 			sourceTree = "<group>";
@@ -98,6 +110,47 @@
 				22C8576F2C36CD0600967E4E /* AFServiceSDK.framework */,
 			);
 			path = SDK;
+			sourceTree = "<group>";
+		};
+		22D17D1D2C37D304005FDAE1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				221982A82C3BBBFD0057A9BC /* SCLoginView.storyboard */,
+				221982AA2C3BBF960057A9BC /* SCLogin.h */,
+				221982AB2C3BBF960057A9BC /* SCLogin.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		22D17D1E2C37D30E005FDAE1 /* MainUI */ = {
+			isa = PBXGroup;
+			children = (
+				22D17D222C37D39D005FDAE1 /* TabBar */,
+				22D17D2A2C3B8806005FDAE1 /* NCMessage */,
+				22D17D252C37D3FC005FDAE1 /* IOSClientMain.storyboard */,
+			);
+			path = MainUI;
+			sourceTree = "<group>";
+		};
+		22D17D222C37D39D005FDAE1 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				22D17D1F2C37D390005FDAE1 /* SCMainTabBarController.h */,
+				22D17D202C37D390005FDAE1 /* SCMainTabBarController.m */,
+				22D17D272C37DAB6005FDAE1 /* SCMainTabBar.h */,
+				22D17D282C37DAB6005FDAE1 /* SCMainTabBar.m */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		22D17D2A2C3B8806005FDAE1 /* NCMessage */ = {
+			isa = PBXGroup;
+			children = (
+				22D17D2B2C3B88BC005FDAE1 /* NCMessage.h */,
+				22D17D2C2C3B88BC005FDAE1 /* NCMessage.m */,
+				22D17D2E2C3B88CC005FDAE1 /* NCMessage.storyboard */,
+			);
+			path = NCMessage;
 			sourceTree = "<group>";
 		};
 		7AC618232C2D85D70030D9C9 /* Category */ = {
@@ -272,14 +325,16 @@
 			files = (
 				7ACE2DAC2C2C02300092982F /* LaunchScreen.storyboard in Resources */,
 				7AC618332C2E6D170030D9C9 /* Inconsolata-Light.ttf in Resources */,
-				22C8576D2C3674BC00967E4E /* SCLogin.storyboard in Resources */,
 				7ACE2DBC2C2C0D850092982F /* Localizable.strings in Resources */,
 				7AC618342C2E6D170030D9C9 /* Inconsolata-ExtraLight.ttf in Resources */,
+				221982A92C3BBBFD0057A9BC /* SCLoginView.storyboard in Resources */,
 				7ACE2DD92C2D09F10092982F /* LaunchCollectionCell.xib in Resources */,
 				7AC618352C2E6D170030D9C9 /* Inconsolata-Regular.ttf in Resources */,
 				7ACE2DA92C2C02300092982F /* Assets.xcassets in Resources */,
+				22D17D2F2C3B88CC005FDAE1 /* NCMessage.storyboard in Resources */,
 				7AC618372C2E6D170030D9C9 /* Lato-Thin.ttf in Resources */,
 				7AC618362C2E6D170030D9C9 /* Lato-Bold.ttf in Resources */,
+				22D17D262C37D3FC005FDAE1 /* IOSClientMain.storyboard in Resources */,
 				7ACE2DA72C2C02240092982F /* OpeningVC.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,10 +388,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D17D292C37DAB6005FDAE1 /* SCMainTabBar.m in Sources */,
 				7ACE2DD82C2D09F10092982F /* LaunchCollectionCell.m in Sources */,
 				7ACE2DA42C2C02240092982F /* OpeningVC.m in Sources */,
+				22D17D2D2C3B88BC005FDAE1 /* NCMessage.m in Sources */,
 				7AC618262C2D87910030D9C9 /* UIView+BasicAnimation.m in Sources */,
-				228036202C32959A00702F39 /* SCLogin.m in Sources */,
+				221982AC2C3BBF960057A9BC /* SCLogin.m in Sources */,
+				22D17D212C37D390005FDAE1 /* SCMainTabBarController.m in Sources */,
 				7ACE2DD42C2D05B00092982F /* AppConfig.swift in Sources */,
 				7ACE2D9E2C2C02240092982F /* AppDelegate.m in Sources */,
 				228036232C32A25900702F39 /* SCNavMain.m in Sources */,

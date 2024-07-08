@@ -1,8 +1,8 @@
 //
-//  SCLogin.h
+//  SCLoginView.h
 //  SocialCommunity
 //
-//  Created by Tim on 2024/7/1.
+//  Created by Tim on 2024/7/8.
 //
 
 #import <UIKit/UIKit.h>
