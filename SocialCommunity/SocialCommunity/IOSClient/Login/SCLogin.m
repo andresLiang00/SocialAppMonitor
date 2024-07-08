@@ -55,8 +55,8 @@
     self.butRegisterTag.backgroundColor = [UIColor whiteColor];
     [self.butRegisterTag setAttributedTitle: [[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"_register_mode_", @"") attributes:@{NSForegroundColorAttributeName:AppColor.shared.launchColor,NSFontAttributeName:[UIFont fontWithName:AppFont.shared.font_Latin_Thin size:18]}] forState:UIControlStateNormal];
     /* 登录按钮变灰*/
-    self.butRegisterTag.backgroundColor = AppColor.shared.borderLightGrayColor;
-    [self.butRegisterTag setAttributedTitle: [[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"_login_mode_", @"") attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont fontWithName:AppFont.shared.font_Latin_Thin size:18]}] forState:UIControlStateNormal];
+    self.butLoginTag.backgroundColor = AppColor.shared.borderLightGrayColor;
+    [self.butLoginTag setAttributedTitle: [[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"_login_mode_", @"") attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont fontWithName:AppFont.shared.font_Latin_Thin size:18]}] forState:UIControlStateNormal];
     /* 重置提示语 */
     self.TFaccount.text = @"";
     self.TFaccount.attributedPlaceholder = [[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"_placeholder_register_account_", @"") attributes:@{NSForegroundColorAttributeName:[UIColor grayColor]}];
@@ -77,6 +77,13 @@
 
 /* 账号密码登录/注册 */
 - (IBAction)requestAccountLogin:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:^{
+            NSBundle *bundle = [NSBundle bundleForClass:self.class];
+            UIStoryboard *sb = [UIStoryboard storyboardWithName:@"IOSClientMain" bundle:nil];
+            SCMainTabBarController *customTabbarVC = [sb instantiateViewControllerWithIdentifier:@"SCMainTabBarController"];
+        SCMainTabBarController *testvc = [[SCMainTabBarController alloc] init];
+        [[[UIApplication sharedApplication] delegate] window].rootViewController = testvc;
+    }];
 }
 
 

@@ -14,9 +14,16 @@
 #endif /* PrefixHeader_pch */
 
 #define hostUrl @"https://github.com/andresLiang00/SocialAppMonitor"
+#define safetyTop [UIApplication sharedApplication].delegate.window.safeAreaInsets.top
+#define safetyBot [UIApplication sharedApplication].delegate.window.safeAreaInsets.bottom
+#define fullWidth [UIScreen mainScreen].bounds.size.width
+#define fullHeight [UIScreen mainScreen].bounds.size.height
 
 #import "SocialCommunity-Swift.h"
 #import "OpeningVC.h"
 #import "SCLogin.h"
 #import "SCMainTabBarController.h"
-#import "SCMainTabBar.h"
+#import "SelectedTabbar.h"
+#import "SCTabBarButton.h"
+#import "SCTabBarItem.h"
+#import "NSString+SCSize.h"

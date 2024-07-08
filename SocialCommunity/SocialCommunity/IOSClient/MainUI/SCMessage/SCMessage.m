@@ -1,17 +1,17 @@
 //
-//  NCMessage.m
+//  SCMessage.m
 //  SocialCommunity
 //
 //  Created by Tim on 2024/7/8.
 //
 
-#import "NCMessage.h"
+#import "SCMessage.h"
 
-@interface NCMessage ()
+@interface SCMessage ()
 
 @end
 
-@implementation NCMessage
+@implementation SCMessage
 
 - (void)viewDidLoad {
     [super viewDidLoad];

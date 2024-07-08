@@ -9,16 +9,33 @@
 
 @interface SCMainTabBarController ()
 
+@property (nonatomic, strong) SelectedTabbar *bottomTabbar;
+@property (nonatomic, assign) float systemTabBarHeight;
+
 @end
 
 @implementation SCMainTabBarController
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        UITabBarController *systemTabbar = [[UITabBarController alloc] init];
+        self.systemTabBarHeight = systemTabbar.tabBar.frame.size.height + safetyBot;
+        self.bottomTabbar = [[SelectedTabbar alloc] initWithFrame:CGRectMake(0, fullHeight - self.systemTabBarHeight, fullWidth, self.systemTabBarHeight)];
+        self.bottomTabbar.dataSources = @[@"Message", @"File", @"Work", @"Connection", @"Daily", @"More"];
+    }
+    return self;
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    [self setValue:[[SCMainTabBar alloc] init] forKey:@"tabBar"];
-    
+//    SCMainTabBar *bar = [[SCMainTabBar alloc] initWithFrame:CGRectZero];
+//    [self setValue:bar forKey:@"tabBar"];
+    [self.view addSubview:self.bottomTabbar];
 }
 
 /*

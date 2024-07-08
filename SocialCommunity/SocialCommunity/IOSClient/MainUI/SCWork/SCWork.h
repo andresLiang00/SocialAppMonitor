@@ -1,5 +1,5 @@
 //
-//  NCMessage.h
+//  SCWork.h
 //  SocialCommunity
 //
 //  Created by Tim on 2024/7/8.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NCMessage : UIViewController
+@interface SCWork : UIViewController
 
 @end
 

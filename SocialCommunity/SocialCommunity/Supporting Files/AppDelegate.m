@@ -16,6 +16,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+//    NSBundle *bundle = [NSBundle bundleForClass:self.class];
+//    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"IOSClientMain" bundle:bundle];
+//    SCMainTabBarController *customTabbarVC = [sb instantiateViewControllerWithIdentifier:@"SCMainTabBarController"];
+//    self.window.rootViewController = customTabbarVC;
+////    self.window.rootViewController = [InitVC new];
+//    [self.window makeKeyAndVisible];
     return YES;
 }
 
