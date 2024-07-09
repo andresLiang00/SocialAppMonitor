@@ -14,20 +14,20 @@
           titleFont:(UIFont *)titleFont
               image:(UIImage *)image
       selectedImage:(UIImage *)selectedImage
+        imageHeight:(CGFloat)imageH
          titleColor:(UIColor *)titleColor
- selectedTitleColor:(UIColor *)selectedTitleColor
-         badgeColor:(UIColor *)badgeColor {
+ selectedTitleColor:(UIColor *)selectedTitleColor {
     self = [super init];
     if (self) {
         self.title = title;
         self.titleFont = titleFont;
         self.image = image;
         self.selectedImage = selectedImage;
+        self.imageH = imageH;
         self.titleColor = titleColor;
         self.selectedTitleColor = selectedTitleColor;
-        self.badge = [[NSString alloc] init];
+//        self.badge = [[NSString alloc] init];
         self.dotShown = NO;
-        self.badgeColor = badgeColor;
     }
     return self;
 }
@@ -43,7 +43,6 @@
     self.selectedImage = item.selectedImage;
     self.titleColor = item.titleColor;
     self.selectedTitleColor = item.selectedTitleColor;
-    self.badgeColor = item.badgeColor;
 }
 
 

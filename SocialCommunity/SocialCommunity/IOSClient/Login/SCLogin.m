@@ -78,9 +78,9 @@
 /* 账号密码登录/注册 */
 - (IBAction)requestAccountLogin:(id)sender {
     [self dismissViewControllerAnimated:YES completion:^{
-            NSBundle *bundle = [NSBundle bundleForClass:self.class];
-            UIStoryboard *sb = [UIStoryboard storyboardWithName:@"IOSClientMain" bundle:nil];
-            SCMainTabBarController *customTabbarVC = [sb instantiateViewControllerWithIdentifier:@"SCMainTabBarController"];
+//        NSBundle *bundle = [NSBundle bundleForClass:self.class];
+//        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"IOSClientMain" bundle:nil];
+//        SCMainTabBarController *customTabbarVC = [sb instantiateViewControllerWithIdentifier:@"SCMainTabBarController"];
         SCMainTabBarController *testvc = [[SCMainTabBarController alloc] init];
         [[[UIApplication sharedApplication] delegate] window].rootViewController = testvc;
     }];

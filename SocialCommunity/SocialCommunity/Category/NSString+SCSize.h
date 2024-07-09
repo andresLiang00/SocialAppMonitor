@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSString (SCSize)
 
+- (CGSize)sizeWithFont:(UIFont *)font maxSize:(CGSize)maxSize;
+
 @end
 
 NS_ASSUME_NONNULL_END

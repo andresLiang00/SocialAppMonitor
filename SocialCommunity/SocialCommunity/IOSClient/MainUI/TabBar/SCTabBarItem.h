@@ -17,10 +17,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UIFont *titleFont;
 @property (nonatomic, strong) UIImage *image;
 @property (nonatomic, strong) UIImage *selectedImage;
+@property (nonatomic, assign) CGFloat imageH;
 @property (nonatomic, strong) UIColor *titleColor;
 @property (nonatomic, strong) UIColor *selectedTitleColor;
 @property (nonatomic, strong) UIColor *badgeColor;
-@property (nonatomic, strong) NSString *badge;
 @property (nonatomic, assign) BOOL dotShown;
 
 - (void)copyClone:(SCTabBarItem *)item;
@@ -29,9 +29,9 @@ NS_ASSUME_NONNULL_BEGIN
           titleFont:(UIFont *)titleFont
               image:(UIImage *)image
       selectedImage:(UIImage *)selectedImage
+        imageHeight:(CGFloat)imageH
          titleColor:(UIColor *)titleColor
- selectedTitleColor:(UIColor *)selectedTitleColor
-         badgeColor:(UIColor *)badgeColor;
+ selectedTitleColor:(UIColor *)selectedTitleColor;
 
 @end
 
