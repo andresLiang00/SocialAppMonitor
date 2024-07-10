@@ -6,6 +6,7 @@
 //
 
 #import "SCMainTabBarController.h"
+#define tabbarImageH 22.f
 
 @interface SCMainTabBarController ()
 
@@ -21,21 +22,22 @@
     self = [super init];
     if (self) {
         UITabBarController *systemTabbar = [[UITabBarController alloc] init];
-        self.systemTabBarHeight = systemTabbar.tabBar.frame.size.height + safetyBot;
-        UIImage *settingSelect = [[UIImage imageNamed:@"icon_file_selected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-        UITabBarItem *tabBarItem = [[UITabBarItem alloc] initWithTitle:@"tabbaritem" image:settingSelect selectedImage:settingSelect];
-        NSLog(@"width:%f",tabBarItem.image.size.width);
-        NSLog(@"height:%f",tabBarItem.image.size.height);
+        CGFloat tabbarheight = MAX(systemTabbar.tabBar.frame.size.height, fullWidth / 6);
+        self.systemTabBarHeight = tabbarheight + safetyBot;
+//        UIImage *settingSelect = [[UIImage imageNamed:@"icon_daily"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//        NSLog(@"width:%f",settingSelect.size.width);
+//        NSLog(@"height:%f",settingSelect.size.height);
 //        NSLog(@"left:%f",tabBarItem.imageInsets.left);
 //        NSLog(@"top:%f",tabBarItem.imageInsets.top);
 //        NSLog(@"right:%f",tabBarItem.imageInsets.right);
 //        NSLog(@"bottom:%f",tabBarItem.imageInsets.bottom);
 //        NSLog(@"height:%f",systemTabbar.tabBar.frame.size.height);
         self.bottomTabbar = [[SelectedTabbar alloc] initWithFrame:CGRectMake(0, fullHeight - self.systemTabBarHeight, fullWidth, self.systemTabBarHeight)];
-        self.bottomTabbar.imageHeight = tabBarItem.image.size.height;
+        self.bottomTabbar.imageHeight = tabbarImageH;
     }
     return self;
 }
+
 
 
 - (void)viewDidLoad {

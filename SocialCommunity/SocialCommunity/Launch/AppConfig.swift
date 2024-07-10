@@ -34,6 +34,12 @@ class AppColor: NSObject {
     
     // borderColor: Green
     @objc public let GreenColor: UIColor =  UIColor(red: 90.0 / 255.0, green: 185.0 / 255.0, blue: 70.0 / 255.0, alpha: 1.0)
+    
+    @objc public let itemTitleColor: UIColor = UIColor(red: 100.0 / 255.0, green: 106.0 / 255.0, blue: 115.0 / 255.0, alpha: 1.0)
+    
+    @objc public let itemTitleSelectedColor: UIColor = UIColor(red: 51.0 / 255.0, green: 112.0 / 255.0, blue: 255.0 / 255.0, alpha: 1.0)
+    
+    @objc public let itemIconColor: UIColor = UIColor(red: 143.0 / 255.0, green: 149.0 / 255.0, blue: 158.0 / 255.0, alpha: 1.0)
 }
 
 class AppFont: NSObject {

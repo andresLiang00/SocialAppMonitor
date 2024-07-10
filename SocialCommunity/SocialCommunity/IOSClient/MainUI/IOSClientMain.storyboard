@@ -34,7 +34,9 @@
         <scene sceneID="isV-Hq-2AE">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="y2s-tE-Qcw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Message" image="square.and.arrow.up.fill" catalog="system" selectedImage="square.and.arrow.up.fill" id="rTj-c5-Qpt"/>
+                    <tabBarItem key="tabBarItem" title="Message" image="square.and.arrow.up.fill" catalog="system" selectedImage="square.and.arrow.up.fill" id="rTj-c5-Qpt">
+                        <color key="badgeColor" red="0.98039215800000001" green="0.98431372640000003" blue="0.98431372640000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mZs-K8-jV7">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>

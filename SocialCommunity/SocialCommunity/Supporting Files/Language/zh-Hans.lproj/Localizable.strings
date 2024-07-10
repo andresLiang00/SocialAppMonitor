@@ -23,3 +23,9 @@
 "_wechat_login_"                     = " 微信登录";
 "_ali_login_"                        = " 支付宝登录";
 "_login_label_hint_"                 = "请输入用户名和密码";
+"_message_item_"                     = "消息";
+"_file_item_"                        = "文件";
+"_work_item_"                        = "工作台";
+"_meeting_item_"                     = "会议";
+"_daily_item_"                       = "日历";
+"_more_item_"                        = "更多";

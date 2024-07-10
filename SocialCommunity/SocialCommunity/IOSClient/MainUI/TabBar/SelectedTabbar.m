@@ -9,9 +9,10 @@
 
 @interface SelectedTabbar ()
 
-//@property (nonatomic, strong) UILabel *topInset;
+@property (nonatomic, strong) UILabel *topInset;
 @property (nonatomic, copy) NSArray *buttonTitles;
 @property (nonatomic, strong) NSMutableArray *buttonImages;
+@property (nonatomic, strong) NSMutableArray *buttonSelectedImages;
 @property (nonatomic, strong) NSMutableArray *buttonViews;
 @property (nonatomic, strong) NSMutableArray *dataArrays;
 
@@ -23,7 +24,13 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        [self createBlurEffect];
+        self.topInset = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width, 0.5)];
+        self.topInset.layer.borderColor = AppColor.shared.borderGrayColor.CGColor;
+        self.topInset.layer.borderWidth = 0.5f;
+        [self addSubview:self.topInset];
         self.buttonImages = [NSMutableArray array];
+        self.buttonSelectedImages = [NSMutableArray array];
         self.buttonViews = [NSMutableArray array];
         self.dataArrays = [NSMutableArray array];
     }
@@ -36,16 +43,41 @@
     [self createBarItem];
 }
 
+- (void)createBlurEffect {
+    self.backgroundColor = [UIColor colorWithRed:250/255.0 green:250/255.0 blue:250/255.0 alpha:1.0];
+//    UIToolbar *toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height)];
+//    toolbar.barStyle = UIBarStyleDefault;
+//    [self addSubview:toolbar];
+}
+
 - (void)createBarItem {
-    self.buttonTitles = @[@"Message", @"File", @"Work", @"Meeting", @"Daily", @"More"];
-    NSArray *imgName = @[@"icon_msg", @"icon_file_selected", @"icon_work", @"icon_meeting", @"icon_daily", @"icon_more"];
+//    self.buttonTitles = @[@"Message", @"File", @"Work", @"Meeting", @"Daily", @"More"];
+    self.buttonTitles = @[NSLocalizedString(@"_message_item_", @""), NSLocalizedString(@"_file_item_", @""), NSLocalizedString(@"_work_item_", @""), NSLocalizedString(@"_meeting_item_", @""), NSLocalizedString(@"_daily_item_", @""), NSLocalizedString(@"_more_item_", @"")];
+    NSArray *imgName = @[@"icon_msg", @"icon_file", @"icon_work", @"icon_meeting", @"icon_daily", @"icon_more"];
+    NSArray *imgSelectedName = @[@"icon_msg_selected", @"icon_file_selected", @"icon_work_selected", @"icon_meeting_selected", @"icon_daily_selected", @"icon_more_selected"];
+    
     for(int i = 0; i < imgName.count; i++) {
-        [_buttonImages addObject:[UIImage imageNamed:[imgName objectAtIndex:i]]];
+        UIImage *img = [[UIImage imageNamed:[imgName objectAtIndex:i]] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+        [_buttonImages addObject:img];
     }
+    
+    for(int i = 0; i < imgSelectedName.count; i++) {
+        // 设置原始格式
+        UIImage *img;
+        if (i == 5) {
+            img = [[UIImage imageNamed:[imgName objectAtIndex:i]] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+        }
+        else {
+            img = [[UIImage imageNamed:[imgSelectedName objectAtIndex:i]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        }
+        [_buttonSelectedImages addObject:img];
+    }
+    
     for (int i = 0; i < _buttonTitles.count; i++) {
         NSString *title = [self.buttonTitles objectAtIndex:i];
         UIImage *iconImg = [self.buttonImages objectAtIndex:i];
-        SCTabBarItem *item = [[SCTabBarItem alloc] initWithTitle:title titleFont:[UIFont fontWithName:AppFont.shared.font_Latin_Thin size:12] image:iconImg selectedImage:iconImg imageHeight:self.imageHeight titleColor:AppColor.shared.borderGrayColor selectedTitleColor:[UIColor blueColor]];
+        UIImage *iconSelectedImg = [self.buttonSelectedImages objectAtIndex:i];
+        SCTabBarItem *item = [[SCTabBarItem alloc] initWithTitle:title titleFont:[UIFont fontWithName:AppFont.shared.font_Latin_Thin size:10] image:iconImg selectedImage:iconSelectedImg imageHeight:self.imageHeight titleColor:AppColor.shared.itemTitleColor selectedTitleColor:AppColor.shared.itemTitleSelectedColor];
         [self.dataArrays addObject:item];
     }
     self.dataSources = [NSArray arrayWithArray:self.dataArrays];
@@ -55,12 +87,13 @@
     [super layoutSubviews];
     if (self.dataSources && self.dataSources.count > 0) {
         CGFloat itemWidth = fullWidth / self.dataSources.count;
-        CGFloat itemHeight = CGRectGetHeight(self.bounds);
+        CGFloat itemHeight = CGRectGetHeight(self.bounds) - safetyBot;
         for (UIView *sub in self.subviews) {
             if ([sub isKindOfClass:[SCTabBarButton class]]) {
                 SCTabBarButton *tabbut = (SCTabBarButton *)sub;
                 tabbut.frame = CGRectMake(0, 0, itemWidth, itemHeight);
-                CGPoint imageCenter = CGPointMake((tabbut.tag + 0.5) * itemWidth, itemHeight/2 - safetyBot / 2);
+//                CGPoint imageCenter = CGPointMake((tabbut.tag + 0.5) * itemWidth, itemHeight/2 - safetyBot / 2);
+                CGPoint imageCenter = CGPointMake((tabbut.tag + 0.5) * itemWidth, itemHeight/2);
                 tabbut.center = imageCenter;
             }
         }
@@ -97,16 +130,28 @@
         [self.buttonViews addObject:tabbarButton];
     }
     
+    [self setDefaultButton];
 //    [self.bgImageView bringSubviewToFront:self.lineImageView];
     
     [self setNeedsLayout];
 }
 
+/* 默认第0个被选中 */
+- (void)setDefaultButton {
+    for (SCTabBarButton *but in self.buttonViews) {
+        if (but.tag == 0) {
+            but.selected = true;
+        }
+    }
+}
+
 /* 按钮点击事件 */
 - (void)tabbarButtonSelected:(SCTabBarButton *)tabbarButton {
+    [self buttonClick:tabbarButton];
+    tabbarButton.selected = !tabbarButton.selected;
     if (self.selectedIndex != tabbarButton.tag) {
         /* 下标不一致时触发点击事件 */
-        [self buttonClick:tabbarButton];
+        [tabbarButton shakeIconAnimaton];
     }
     self.selectedIndex = tabbarButton.tag;
 }
@@ -115,7 +160,6 @@
     for (SCTabBarButton *subBut in self.buttonViews) {
         [subBut resetButtonStatus];
     }
-    [tabbarButton shakeIconAnimaton];
 }
 
 @end

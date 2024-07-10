@@ -23,3 +23,9 @@
 "_wechat_login_"                     = " Wechat login";
 "_ali_login_"                        = " Alipay login";
 "_login_label_hint_"                 = "Please enter your account and password";
+"_message_item_"                     = "Message";
+"_file_item_"                        = "File";
+"_work_item_"                        = "Work";
+"_meeting_item_"                     = "Meeting";
+"_daily_item_"                       = "Daily";
+"_more_item_"                        = "More";

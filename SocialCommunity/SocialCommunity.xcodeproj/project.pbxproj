@@ -26,6 +26,8 @@
 		22AF141F2C3BE1E1009F491C /* SCTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF141E2C3BE1E1009F491C /* SCTabBarButton.m */; };
 		22AF14222C3BE3F5009F491C /* SCTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF14212C3BE3F5009F491C /* SCTabBarItem.m */; };
 		22AF14252C3BE6B3009F491C /* NSString+SCSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF14242C3BE6B3009F491C /* NSString+SCSize.m */; };
+		22BBC6EC2C3E326100F04D3C /* UIColor+RGBColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BBC6EB2C3E326100F04D3C /* UIColor+RGBColor.m */; };
+		22BBC6EF2C3E86CB00F04D3C /* SCCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BBC6EE2C3E86CB00F04D3C /* SCCalendar.m */; };
 		22C857702C36CD0600967E4E /* AFServiceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C8576F2C36CD0600967E4E /* AFServiceSDK.framework */; };
 		22D17D212C37D390005FDAE1 /* SCMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D17D202C37D390005FDAE1 /* SCMainTabBarController.m */; };
 		22D17D262C37D3FC005FDAE1 /* IOSClientMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D17D252C37D3FC005FDAE1 /* IOSClientMain.storyboard */; };
@@ -81,6 +83,10 @@
 		22AF14212C3BE3F5009F491C /* SCTabBarItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCTabBarItem.m; sourceTree = "<group>"; };
 		22AF14232C3BE6B3009F491C /* NSString+SCSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+SCSize.h"; sourceTree = "<group>"; };
 		22AF14242C3BE6B3009F491C /* NSString+SCSize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+SCSize.m"; sourceTree = "<group>"; };
+		22BBC6EA2C3E326100F04D3C /* UIColor+RGBColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+RGBColor.h"; sourceTree = "<group>"; };
+		22BBC6EB2C3E326100F04D3C /* UIColor+RGBColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RGBColor.m"; sourceTree = "<group>"; };
+		22BBC6ED2C3E86CB00F04D3C /* SCCalendar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCalendar.h; sourceTree = "<group>"; };
+		22BBC6EE2C3E86CB00F04D3C /* SCCalendar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCalendar.m; sourceTree = "<group>"; };
 		22C8576F2C36CD0600967E4E /* AFServiceSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AFServiceSDK.framework; sourceTree = "<group>"; };
 		22D17D1F2C37D390005FDAE1 /* SCMainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCMainTabBarController.h; sourceTree = "<group>"; };
 		22D17D202C37D390005FDAE1 /* SCMainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCMainTabBarController.m; sourceTree = "<group>"; };
@@ -232,6 +238,8 @@
 				22AF141E2C3BE1E1009F491C /* SCTabBarButton.m */,
 				22AF14202C3BE3F5009F491C /* SCTabBarItem.h */,
 				22AF14212C3BE3F5009F491C /* SCTabBarItem.m */,
+				22BBC6ED2C3E86CB00F04D3C /* SCCalendar.h */,
+				22BBC6EE2C3E86CB00F04D3C /* SCCalendar.m */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -253,6 +261,8 @@
 				7AC618252C2D87910030D9C9 /* UIView+BasicAnimation.m */,
 				22AF14232C3BE6B3009F491C /* NSString+SCSize.h */,
 				22AF14242C3BE6B3009F491C /* NSString+SCSize.m */,
+				22BBC6EA2C3E326100F04D3C /* UIColor+RGBColor.h */,
+				22BBC6EB2C3E326100F04D3C /* UIColor+RGBColor.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -497,8 +507,10 @@
 				221982AF2C3BC76D0057A9BC /* SCMessage.m in Sources */,
 				7AC618262C2D87910030D9C9 /* UIView+BasicAnimation.m in Sources */,
 				221982BE2C3BC8860057A9BC /* SCWork.m in Sources */,
+				22BBC6EF2C3E86CB00F04D3C /* SCCalendar.m in Sources */,
 				221982AC2C3BBF960057A9BC /* SCLogin.m in Sources */,
 				22AF141F2C3BE1E1009F491C /* SCTabBarButton.m in Sources */,
+				22BBC6EC2C3E326100F04D3C /* UIColor+RGBColor.m in Sources */,
 				22D17D212C37D390005FDAE1 /* SCMainTabBarController.m in Sources */,
 				7ACE2DD42C2D05B00092982F /* AppConfig.swift in Sources */,
 				221982C32C3BC89A0057A9BC /* SCDaily.m in Sources */,

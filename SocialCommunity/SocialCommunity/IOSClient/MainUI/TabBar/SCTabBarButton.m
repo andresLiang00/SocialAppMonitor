@@ -10,8 +10,7 @@
 @interface SCTabBarButton ()
 
 //@property (nonatomic, strong) UIImageView *badgeImageView;
-//@property (nonatomic, strong) UILabel *badgeLabel;
-@property (nonatomic, strong) UIView *combineView;
+@property (nonatomic, strong) UILabel *badgeLabel;
 
 @end
 
@@ -21,10 +20,9 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        [self addSubview:self.combineView];
-        [self.combineView addSubview:self.iconImageView];
+        [self addSubview:self.iconImageView];
 //        [self addSubview:self.badgeImageView];
-        [self.combineView addSubview:self.titleLabel];
+        [self addSubview:self.titleLabel];
 //        [self addSubview:self.badgeLabel];
     }
     return self;
@@ -34,6 +32,7 @@
     _tabbarItem = tabbarItem;
     /* 常规状态 */
     self.iconImageView.image = tabbarItem.image;
+    self.iconImageView.tintColor = AppColor.shared.itemIconColor;
     self.iconImageView.contentMode = UIViewContentModeCenter;
     
     /* 标题 */
@@ -50,37 +49,64 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
 //    NSLog(@"%f", self.frame.size.height);
-    NSLog(@"imageH:%f", self.tabbarItem.imageH);
-    NSLog(@"butW:%f", CGRectGetWidth(self.bounds));
+//    NSLog(@"imageH:%f", self.tabbarItem.imageH);
+//    NSLog(@"butW:%f", CGRectGetWidth(self.bounds));
     CGSize titleSize = [self.titleLabel.text sizeWithFont:self.titleLabel.font maxSize:CGSizeMake(CGRectGetWidth(self.frame), 13.f)];
 //    CGFloat titleHeight = MIN(ceil(titleSize.height), 18.f);
     CGFloat titleHeight = ceil(titleSize.height);
-    self.iconImageView.frame = CGRectMake(0, 0, self.tabbarItem.imageH / 2, self.tabbarItem.imageH / 2);
+    CGFloat iconWidth = self.tabbarItem.imageH;
+    // maxWidth是取文字或图片最大值
+    CGFloat maxWidth = MAX(titleSize.width, iconWidth);
+    self.iconImageView.frame = CGRectMake(0, (CGRectGetHeight(self.bounds) - iconWidth) / 2, iconWidth, iconWidth);
     self.iconImageView.center = CGPointMake(0.5 * CGRectGetWidth(self.bounds), self.iconImageView.center.y);
-    self.titleLabel.frame = CGRectMake(CGRectGetMinX(self.iconImageView.frame), CGRectGetMaxY(self.iconImageView.frame) + 5, self.tabbarItem.imageH / 2, titleHeight);
-    
+    if (self.tag == 4) {
+        self.badgeLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, iconWidth, iconWidth)];
+        self.badgeLabel.text = [NSString stringWithFormat:@"%ld",(long)[SCCalendar shared].currentDay];
+        self.badgeLabel.font = [UIFont fontWithName:AppFont.shared.font_Latin_Bold size:10];
+        self.badgeLabel.textAlignment = NSTextAlignmentCenter;
+        self.badgeLabel.textColor = AppColor.shared.textWhiteColor;
+        [self.badgeLabel sizeToFit];
+        self.badgeLabel.center = self.iconImageView.center;
+        [self addSubview:self.badgeLabel];
+    }
+    self.titleLabel.frame = CGRectMake(0, CGRectGetMaxY(self.iconImageView.frame) + 5, maxWidth, titleHeight);
+    self.titleLabel.center = CGPointMake(0.5 * CGRectGetWidth(self.bounds), self.titleLabel.center.y);
+
 }
 
 - (void)setSelected:(BOOL)selected {
     [super setSelected:selected];
     if (selected) {
-        self.titleLabel.textColor = self.tabbarItem.selectedTitleColor;
-        self.iconImageView.image = self.tabbarItem.selectedImage;
+        if (self.tag == 5) {
+            self.titleLabel.textColor = self.tabbarItem.selectedTitleColor;
+            self.iconImageView.image = self.tabbarItem.selectedImage;
+            self.iconImageView.tintColor = AppColor.shared.itemTitleSelectedColor;
+        }
+        else {
+            self.titleLabel.textColor = self.tabbarItem.selectedTitleColor;
+            self.iconImageView.image = self.tabbarItem.selectedImage;
+        }
     }
     else {
         self.titleLabel.textColor = self.tabbarItem.titleColor;
         self.iconImageView.image = self.tabbarItem.image;
+        self.iconImageView.tintColor = AppColor.shared.itemIconColor;
     }
 }
 
+
 /* 重置按钮状态 */
 - (void)resetButtonStatus {
-    
+    self.selected = false;
 }
 
 /* 点击事件动画-图标闪烁 */
 - (void)shakeIconAnimaton {
-    
+    CABasicAnimation* shake = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+    shake.fromValue = [NSNumber numberWithFloat:1.0];
+    shake.toValue = [NSNumber numberWithFloat:0.8];
+    shake.repeatCount = 1;
+    [self.layer addAnimation:shake forKey:@"shakeAnimation"];
 }
 
 - (UIImageView *)iconImageView {
