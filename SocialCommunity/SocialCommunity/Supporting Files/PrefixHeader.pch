@@ -20,12 +20,18 @@
 #define fullHeight [UIScreen mainScreen].bounds.size.height
 
 #import "SocialCommunity-Swift.h"
+/* 登录页 */
 #import "OpeningVC.h"
 #import "SCLogin.h"
+/* tabbar配置部分 */
 #import "SCMainTabBarController.h"
-#import "SelectedTabbar.h"
+#import "SCSelectedTabbar.h"
 #import "SCTabBarButton.h"
 #import "SCTabBarItem.h"
+/* tabbar的item部分 */
 #import "SCCalendar.h"
+#import "SCMessage.h"
+#import "SCMessageNav.h"
+
 #import "NSString+SCSize.h"
 #import "UIColor+RGBColor.h"

@@ -121,10 +121,10 @@
             </objects>
             <point key="canvasLocation" x="1425" y="870"/>
         </scene>
-        <!--SCMessage-->
+        <!--Storyboard Reference-->
         <scene sceneID="Djd-WX-GVg">
             <objects>
-                <viewControllerPlaceholder storyboardName="SCMessage" referencedIdentifier="SCMessage" id="v16-xD-5V5" sceneMemberID="viewController">
+                <viewControllerPlaceholder id="v16-xD-5V5" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="xjj-sB-Hbh"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7so-vH-Rs4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

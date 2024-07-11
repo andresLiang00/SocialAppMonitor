@@ -5,9 +5,9 @@
 //  Created by Tim on 2024/7/8.
 //
 
-#import "SelectedTabbar.h"
+#import "SCSelectedTabbar.h"
 
-@interface SelectedTabbar ()
+@interface SCSelectedTabbar ()
 
 @property (nonatomic, strong) UILabel *topInset;
 @property (nonatomic, copy) NSArray *buttonTitles;
@@ -18,7 +18,7 @@
 
 @end
 
-@implementation SelectedTabbar
+@implementation SCSelectedTabbar
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -141,13 +141,14 @@
     for (SCTabBarButton *but in self.buttonViews) {
         if (but.tag == 0) {
             but.selected = true;
+            self.selectedIndex = 0;
         }
     }
 }
 
 /* 按钮点击事件 */
 - (void)tabbarButtonSelected:(SCTabBarButton *)tabbarButton {
-    [self buttonClick:tabbarButton];
+    [self buttonClickReset];
     tabbarButton.selected = !tabbarButton.selected;
     if (self.selectedIndex != tabbarButton.tag) {
         /* 下标不一致时触发点击事件 */
@@ -156,9 +157,16 @@
     self.selectedIndex = tabbarButton.tag;
 }
 
-- (void)buttonClick:(SCTabBarButton *)tabbarButton {
+- (void)buttonClickReset {
     for (SCTabBarButton *subBut in self.buttonViews) {
         [subBut resetButtonStatus];
+    }
+}
+
+- (void)setSelectedIndex:(NSInteger)selectedIndex {
+    _selectedIndex = selectedIndex;
+    if (self.tabDelegate && [self.tabDelegate respondsToSelector:@selector(tabBar:tabDidSelectedIndex:)]) {
+        [self.tabDelegate tabBar:self tabDidSelectedIndex:selectedIndex];
     }
 }
 

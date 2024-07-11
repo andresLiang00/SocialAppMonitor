@@ -1,17 +1,17 @@
 //
-//  SCMessage.m
+//  SCMessageNav.m
 //  SocialCommunity
 //
-//  Created by Tim on 2024/7/8.
+//  Created by Tim on 2024/7/11.
 //
 
-#import "SCMessage.h"
+#import "SCMessageNav.h"
 
-@interface SCMessage ()
+@interface SCMessageNav ()
 
 @end
 
-@implementation SCMessage
+@implementation SCMessageNav
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -27,14 +27,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        self.view.backgroundColor = [UIColor whiteColor];
-    }
-    return self;
-}
 
 @end

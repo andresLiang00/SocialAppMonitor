@@ -22,12 +22,14 @@
 		221982CE2C3BC95D0057A9BC /* SCConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 221982CD2C3BC95D0057A9BC /* SCConnection.m */; };
 		221982D02C3BC9660057A9BC /* SCConnection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 221982CF2C3BC9660057A9BC /* SCConnection.storyboard */; };
 		228036232C32A25900702F39 /* SCNavMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 228036222C32A25900702F39 /* SCNavMain.m */; };
-		22AF141C2C3BDFBA009F491C /* SelectedTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF141B2C3BDFBA009F491C /* SelectedTabbar.m */; };
+		22AF141C2C3BDFBA009F491C /* SCSelectedTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF141B2C3BDFBA009F491C /* SCSelectedTabbar.m */; };
 		22AF141F2C3BE1E1009F491C /* SCTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF141E2C3BE1E1009F491C /* SCTabBarButton.m */; };
 		22AF14222C3BE3F5009F491C /* SCTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF14212C3BE3F5009F491C /* SCTabBarItem.m */; };
 		22AF14252C3BE6B3009F491C /* NSString+SCSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF14242C3BE6B3009F491C /* NSString+SCSize.m */; };
 		22BBC6EC2C3E326100F04D3C /* UIColor+RGBColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BBC6EB2C3E326100F04D3C /* UIColor+RGBColor.m */; };
 		22BBC6EF2C3E86CB00F04D3C /* SCCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BBC6EE2C3E86CB00F04D3C /* SCCalendar.m */; };
+		22BBC6F42C3FDC8F00F04D3C /* SCMainUIGuide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22BBC6F32C3FDC8F00F04D3C /* SCMainUIGuide.storyboard */; };
+		22BBC6F72C3FE24800F04D3C /* SCMessageNav.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BBC6F62C3FE24800F04D3C /* SCMessageNav.m */; };
 		22C857702C36CD0600967E4E /* AFServiceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C8576F2C36CD0600967E4E /* AFServiceSDK.framework */; };
 		22D17D212C37D390005FDAE1 /* SCMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D17D202C37D390005FDAE1 /* SCMainTabBarController.m */; };
 		22D17D262C37D3FC005FDAE1 /* IOSClientMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D17D252C37D3FC005FDAE1 /* IOSClientMain.storyboard */; };
@@ -75,8 +77,8 @@
 		221982CF2C3BC9660057A9BC /* SCConnection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SCConnection.storyboard; sourceTree = "<group>"; };
 		228036212C32A25900702F39 /* SCNavMain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCNavMain.h; sourceTree = "<group>"; };
 		228036222C32A25900702F39 /* SCNavMain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCNavMain.m; sourceTree = "<group>"; };
-		22AF141A2C3BDFBA009F491C /* SelectedTabbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectedTabbar.h; sourceTree = "<group>"; };
-		22AF141B2C3BDFBA009F491C /* SelectedTabbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectedTabbar.m; sourceTree = "<group>"; };
+		22AF141A2C3BDFBA009F491C /* SCSelectedTabbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCSelectedTabbar.h; sourceTree = "<group>"; };
+		22AF141B2C3BDFBA009F491C /* SCSelectedTabbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCSelectedTabbar.m; sourceTree = "<group>"; };
 		22AF141D2C3BE1E1009F491C /* SCTabBarButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCTabBarButton.h; sourceTree = "<group>"; };
 		22AF141E2C3BE1E1009F491C /* SCTabBarButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCTabBarButton.m; sourceTree = "<group>"; };
 		22AF14202C3BE3F5009F491C /* SCTabBarItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCTabBarItem.h; sourceTree = "<group>"; };
@@ -87,6 +89,9 @@
 		22BBC6EB2C3E326100F04D3C /* UIColor+RGBColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RGBColor.m"; sourceTree = "<group>"; };
 		22BBC6ED2C3E86CB00F04D3C /* SCCalendar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCalendar.h; sourceTree = "<group>"; };
 		22BBC6EE2C3E86CB00F04D3C /* SCCalendar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCalendar.m; sourceTree = "<group>"; };
+		22BBC6F32C3FDC8F00F04D3C /* SCMainUIGuide.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SCMainUIGuide.storyboard; sourceTree = "<group>"; };
+		22BBC6F52C3FE24800F04D3C /* SCMessageNav.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCMessageNav.h; sourceTree = "<group>"; };
+		22BBC6F62C3FE24800F04D3C /* SCMessageNav.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCMessageNav.m; sourceTree = "<group>"; };
 		22C8576F2C36CD0600967E4E /* AFServiceSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AFServiceSDK.framework; sourceTree = "<group>"; };
 		22D17D1F2C37D390005FDAE1 /* SCMainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCMainTabBarController.h; sourceTree = "<group>"; };
 		22D17D202C37D390005FDAE1 /* SCMainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCMainTabBarController.m; sourceTree = "<group>"; };
@@ -215,6 +220,7 @@
 		22D17D1E2C37D30E005FDAE1 /* MainUI */ = {
 			isa = PBXGroup;
 			children = (
+				22BBC6F32C3FDC8F00F04D3C /* SCMainUIGuide.storyboard */,
 				22D17D222C37D39D005FDAE1 /* TabBar */,
 				22D17D2A2C3B8806005FDAE1 /* SCMessage */,
 				221982B22C3BC8100057A9BC /* SCFile */,
@@ -232,8 +238,8 @@
 			children = (
 				22D17D1F2C37D390005FDAE1 /* SCMainTabBarController.h */,
 				22D17D202C37D390005FDAE1 /* SCMainTabBarController.m */,
-				22AF141A2C3BDFBA009F491C /* SelectedTabbar.h */,
-				22AF141B2C3BDFBA009F491C /* SelectedTabbar.m */,
+				22AF141A2C3BDFBA009F491C /* SCSelectedTabbar.h */,
+				22AF141B2C3BDFBA009F491C /* SCSelectedTabbar.m */,
 				22AF141D2C3BE1E1009F491C /* SCTabBarButton.h */,
 				22AF141E2C3BE1E1009F491C /* SCTabBarButton.m */,
 				22AF14202C3BE3F5009F491C /* SCTabBarItem.h */,
@@ -250,6 +256,8 @@
 				221982AD2C3BC76D0057A9BC /* SCMessage.h */,
 				221982AE2C3BC76D0057A9BC /* SCMessage.m */,
 				221982B02C3BC7750057A9BC /* SCMessage.storyboard */,
+				22BBC6F52C3FE24800F04D3C /* SCMessageNav.h */,
+				22BBC6F62C3FE24800F04D3C /* SCMessageNav.m */,
 			);
 			path = SCMessage;
 			sourceTree = "<group>";
@@ -441,6 +449,7 @@
 				7AC618372C2E6D170030D9C9 /* Lato-Thin.ttf in Resources */,
 				7AC618362C2E6D170030D9C9 /* Lato-Bold.ttf in Resources */,
 				221982BB2C3BC8790057A9BC /* SCFile.storyboard in Resources */,
+				22BBC6F42C3FDC8F00F04D3C /* SCMainUIGuide.storyboard in Resources */,
 				22D17D262C37D3FC005FDAE1 /* IOSClientMain.storyboard in Resources */,
 				221982D02C3BC9660057A9BC /* SCConnection.storyboard in Resources */,
 				221982B12C3BC7750057A9BC /* SCMessage.storyboard in Resources */,
@@ -499,7 +508,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22AF14222C3BE3F5009F491C /* SCTabBarItem.m in Sources */,
-				22AF141C2C3BDFBA009F491C /* SelectedTabbar.m in Sources */,
+				22AF141C2C3BDFBA009F491C /* SCSelectedTabbar.m in Sources */,
 				22AF14252C3BE6B3009F491C /* NSString+SCSize.m in Sources */,
 				7ACE2DD82C2D09F10092982F /* LaunchCollectionCell.m in Sources */,
 				7ACE2DA42C2C02240092982F /* OpeningVC.m in Sources */,
@@ -519,6 +528,7 @@
 				228036232C32A25900702F39 /* SCNavMain.m in Sources */,
 				7ACE2DAF2C2C02300092982F /* main.m in Sources */,
 				221982CE2C3BC95D0057A9BC /* SCConnection.m in Sources */,
+				22BBC6F72C3FE24800F04D3C /* SCMessageNav.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

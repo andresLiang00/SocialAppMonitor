@@ -1,17 +1,15 @@
 //
-//  SCMessage.h
+//  SCMessageNav.h
 //  SocialCommunity
 //
-//  Created by Tim on 2024/7/8.
+//  Created by Tim on 2024/7/11.
 //
 
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SCMessage : UIViewController
-
-
+@interface SCMessageNav : UINavigationController
 
 @end
 
