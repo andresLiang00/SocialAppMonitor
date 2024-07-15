@@ -6,6 +6,8 @@
 //
 
 #import "SCSelectedTabbar.h"
+#import "SCTabBarItem.h"
+#import "SCTabBarButton.h"
 
 @interface SCSelectedTabbar ()
 

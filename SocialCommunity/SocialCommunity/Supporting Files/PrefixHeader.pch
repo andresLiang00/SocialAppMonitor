@@ -23,15 +23,9 @@
 /* 登录页 */
 #import "OpeningVC.h"
 #import "SCLogin.h"
-/* tabbar配置部分 */
+/* tabbarVC部分 */
 #import "SCMainTabBarController.h"
-#import "SCSelectedTabbar.h"
-#import "SCTabBarButton.h"
-#import "SCTabBarItem.h"
-/* tabbar的item部分 */
-#import "SCCalendar.h"
-#import "SCMessage.h"
-#import "SCMessageNav.h"
-
+/* category */
 #import "NSString+SCSize.h"
 #import "UIColor+RGBColor.h"
+#import "UIButton+ExtendEdge.h"

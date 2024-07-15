@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIColor (RGBColor)
 
-- (UIColor *) colorWithHexString:(NSString *)color;
++ (UIColor *)colorWithHexString:(NSString *)color;
 
 @end
 
