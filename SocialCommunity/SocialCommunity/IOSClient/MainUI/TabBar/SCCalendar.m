@@ -22,8 +22,17 @@
 - (void)getDate {
     NSDate *currentDate = [NSDate date];
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSDateComponents *component = [calendar components:NSCalendarUnitDay fromDate:currentDate];
-    self.currentDay = [component day];
+    NSDateComponents *component = [calendar components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute fromDate:currentDate];
+    NSInteger year = [component year];
+    NSInteger month = [component month];
+    NSInteger day = [component day];
+    NSInteger hour = [component hour];
+    NSInteger minute = [component minute];
+    self.currentDay = day;
+    self.currentHour = hour;
+    self.currentMinute = minute;
+    self.dateString = [NSString stringWithFormat:@"%ld年%ld月", year, month];
+   
 }
 
 

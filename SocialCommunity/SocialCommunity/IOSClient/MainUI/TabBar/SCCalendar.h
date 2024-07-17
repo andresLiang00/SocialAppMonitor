@@ -13,6 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (SCCalendar *)shared;
 @property (nonatomic, assign) NSInteger currentDay;
+@property (nonatomic, copy) NSString *dateString;
+@property (nonatomic, assign) NSInteger currentHour;
+@property (nonatomic, assign) NSInteger currentMinute;
 @end
 
 NS_ASSUME_NONNULL_END

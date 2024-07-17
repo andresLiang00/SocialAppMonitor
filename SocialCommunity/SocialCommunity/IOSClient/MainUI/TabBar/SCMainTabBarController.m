@@ -15,6 +15,7 @@
 #import "SCCalendar.h"
 #import "SCMessage.h"
 #import "SCMessageNav.h"
+#import "SCFile.h"
 
 #define tabbarImageH 22.f
 
@@ -28,7 +29,7 @@
 
 // 几个子VC
 @property (nonatomic, strong) SCMessage *SCMsgVC;
-
+@property (nonatomic, strong) SCFile *SCFileVC;
 
 @end
 
@@ -109,21 +110,22 @@
 - (void)createVCGroup {
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"SCMainUIGuide" bundle:nil];
     SCMessageNav *navi = [sb instantiateViewControllerWithIdentifier:@"SCMessageNav"];
-    self.viewControllersGroup = @[navi];
+    self.SCFileVC = [sb instantiateViewControllerWithIdentifier:@"SCFileNav"];
+    self.viewControllersGroup = @[navi,_SCFileVC];
 }
 
 
 - (void)tabBar:(SCSelectedTabbar *)tabBar tabDidSelectedIndex:(NSInteger)index {
     self.selectedIndex = index;
     NSLog(@"SCMainVC index:%ld",(long)index);
-//    UIViewController *matchVC = [self.viewControllersGroup objectAtIndex:index];
-    UINavigationController *matchVC = [self.viewControllersGroup objectAtIndex:0];
-//    matchVC.view.tag = index;
-    matchVC.view.tag = 0;
-    matchVC.view.frame = CGRectMake(0, 0, fullWidth, fullHeight);
-//    [self.view insertSubview:matchVC.view belowSubview:self.bottomTabbar];
-//    [self.view insertSubview:matchVC.view belowSubview:self.topTabbar];
     [self.topTabbar selectedViewWithTag:index];
+    //    UIViewController *matchVC = [self.viewControllersGroup objectAtIndex:index];
+        UINavigationController *matchVC = [self.viewControllersGroup objectAtIndex:index];
+    //    matchVC.view.tag = index;
+        matchVC.view.tag = 0;
+        matchVC.view.frame = CGRectMake(0, 0, fullWidth, fullHeight);
+        [self.view insertSubview:matchVC.view belowSubview:self.bottomTabbar];
+        [self.view insertSubview:matchVC.view belowSubview:self.topTabbar];
 //    [self addChildViewController:matchVC];
 }
 @end

@@ -19,8 +19,6 @@
 		221982C52C3BC8A00057A9BC /* SCDaily.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 221982C42C3BC8A00057A9BC /* SCDaily.storyboard */; };
 		221982C92C3BC8B00057A9BC /* SCMore.m in Sources */ = {isa = PBXBuildFile; fileRef = 221982C82C3BC8B00057A9BC /* SCMore.m */; };
 		221982CB2C3BC8B70057A9BC /* SCMore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 221982CA2C3BC8B70057A9BC /* SCMore.storyboard */; };
-		221982CE2C3BC95D0057A9BC /* SCConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 221982CD2C3BC95D0057A9BC /* SCConnection.m */; };
-		221982D02C3BC9660057A9BC /* SCConnection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 221982CF2C3BC9660057A9BC /* SCConnection.storyboard */; };
 		228036232C32A25900702F39 /* SCNavMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 228036222C32A25900702F39 /* SCNavMain.m */; };
 		22AF141C2C3BDFBA009F491C /* SCSelectedTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF141B2C3BDFBA009F491C /* SCSelectedTabbar.m */; };
 		22AF141F2C3BE1E1009F491C /* SCTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AF141E2C3BE1E1009F491C /* SCTabBarButton.m */; };
@@ -41,6 +39,8 @@
 		22C857702C36CD0600967E4E /* AFServiceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C8576F2C36CD0600967E4E /* AFServiceSDK.framework */; };
 		22D17D212C37D390005FDAE1 /* SCMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D17D202C37D390005FDAE1 /* SCMainTabBarController.m */; };
 		22D17D262C37D3FC005FDAE1 /* IOSClientMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D17D252C37D3FC005FDAE1 /* IOSClientMain.storyboard */; };
+		22D252CB2C47BEDA0078862C /* SCMeeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D252CA2C47BEDA0078862C /* SCMeeting.m */; };
+		22D252CD2C47BEE50078862C /* SCMeeting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D252CC2C47BEE50078862C /* SCMeeting.storyboard */; };
 		7AC618262C2D87910030D9C9 /* UIView+BasicAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC618252C2D87910030D9C9 /* UIView+BasicAnimation.m */; };
 		7AC618332C2E6D170030D9C9 /* Inconsolata-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AC6182E2C2E6D170030D9C9 /* Inconsolata-Light.ttf */; };
 		7AC618342C2E6D170030D9C9 /* Inconsolata-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AC6182F2C2E6D170030D9C9 /* Inconsolata-ExtraLight.ttf */; };
@@ -80,9 +80,6 @@
 		221982C72C3BC8B00057A9BC /* SCMore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCMore.h; sourceTree = "<group>"; };
 		221982C82C3BC8B00057A9BC /* SCMore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCMore.m; sourceTree = "<group>"; };
 		221982CA2C3BC8B70057A9BC /* SCMore.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SCMore.storyboard; sourceTree = "<group>"; };
-		221982CC2C3BC95D0057A9BC /* SCConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCConnection.h; sourceTree = "<group>"; };
-		221982CD2C3BC95D0057A9BC /* SCConnection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCConnection.m; sourceTree = "<group>"; };
-		221982CF2C3BC9660057A9BC /* SCConnection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SCConnection.storyboard; sourceTree = "<group>"; };
 		228036212C32A25900702F39 /* SCNavMain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCNavMain.h; sourceTree = "<group>"; };
 		228036222C32A25900702F39 /* SCNavMain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCNavMain.m; sourceTree = "<group>"; };
 		22AF141A2C3BDFBA009F491C /* SCSelectedTabbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCSelectedTabbar.h; sourceTree = "<group>"; };
@@ -119,6 +116,9 @@
 		22D17D1F2C37D390005FDAE1 /* SCMainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCMainTabBarController.h; sourceTree = "<group>"; };
 		22D17D202C37D390005FDAE1 /* SCMainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCMainTabBarController.m; sourceTree = "<group>"; };
 		22D17D252C37D3FC005FDAE1 /* IOSClientMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IOSClientMain.storyboard; sourceTree = "<group>"; };
+		22D252C92C47BEDA0078862C /* SCMeeting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCMeeting.h; sourceTree = "<group>"; };
+		22D252CA2C47BEDA0078862C /* SCMeeting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCMeeting.m; sourceTree = "<group>"; };
+		22D252CC2C47BEE50078862C /* SCMeeting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SCMeeting.storyboard; sourceTree = "<group>"; };
 		231587F49CC8CA5C410BC8DB /* Pods-SocialCommunity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialCommunity.debug.xcconfig"; path = "Target Support Files/Pods-SocialCommunity/Pods-SocialCommunity.debug.xcconfig"; sourceTree = "<group>"; };
 		525D8AAA4506DE7FD88C15D4 /* Pods-SocialCommunity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialCommunity.release.xcconfig"; path = "Target Support Files/Pods-SocialCommunity/Pods-SocialCommunity.release.xcconfig"; sourceTree = "<group>"; };
 		7AC618242C2D87910030D9C9 /* UIView+BasicAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+BasicAnimation.h"; sourceTree = "<group>"; };
@@ -183,14 +183,14 @@
 			path = SCWork;
 			sourceTree = "<group>";
 		};
-		221982B42C3BC8330057A9BC /* SCConnection */ = {
+		221982B42C3BC8330057A9BC /* SCMeeting */ = {
 			isa = PBXGroup;
 			children = (
-				221982CC2C3BC95D0057A9BC /* SCConnection.h */,
-				221982CD2C3BC95D0057A9BC /* SCConnection.m */,
-				221982CF2C3BC9660057A9BC /* SCConnection.storyboard */,
+				22D252C92C47BEDA0078862C /* SCMeeting.h */,
+				22D252CA2C47BEDA0078862C /* SCMeeting.m */,
+				22D252CC2C47BEE50078862C /* SCMeeting.storyboard */,
 			);
-			path = SCConnection;
+			path = SCMeeting;
 			sourceTree = "<group>";
 		};
 		221982B52C3BC83B0057A9BC /* SCDaily */ = {
@@ -280,7 +280,7 @@
 				221982B32C3BC8290057A9BC /* SCWork */,
 				221982B52C3BC83B0057A9BC /* SCDaily */,
 				221982B62C3BC8430057A9BC /* SCMore */,
-				221982B42C3BC8330057A9BC /* SCConnection */,
+				221982B42C3BC8330057A9BC /* SCMeeting */,
 				22D17D252C37D3FC005FDAE1 /* IOSClientMain.storyboard */,
 			);
 			path = MainUI;
@@ -500,13 +500,13 @@
 				22BBC70D2C44CDAD00F04D3C /* SCMain.storyboard in Resources */,
 				7ACE2DD92C2D09F10092982F /* LaunchCollectionCell.xib in Resources */,
 				7AC618352C2E6D170030D9C9 /* Inconsolata-Regular.ttf in Resources */,
+				22D252CD2C47BEE50078862C /* SCMeeting.storyboard in Resources */,
 				7ACE2DA92C2C02300092982F /* Assets.xcassets in Resources */,
 				7AC618372C2E6D170030D9C9 /* Lato-Thin.ttf in Resources */,
 				7AC618362C2E6D170030D9C9 /* Lato-Bold.ttf in Resources */,
 				221982BB2C3BC8790057A9BC /* SCFile.storyboard in Resources */,
 				22BBC6F42C3FDC8F00F04D3C /* SCMainUIGuide.storyboard in Resources */,
 				22D17D262C37D3FC005FDAE1 /* IOSClientMain.storyboard in Resources */,
-				221982D02C3BC9660057A9BC /* SCConnection.storyboard in Resources */,
 				221982B12C3BC7750057A9BC /* SCMessage.storyboard in Resources */,
 				221982C02C3BC88F0057A9BC /* SCWork.storyboard in Resources */,
 				7ACE2DA72C2C02240092982F /* OpeningVC.storyboard in Resources */,
@@ -588,8 +588,8 @@
 				221982B92C3BC8700057A9BC /* SCFile.m in Sources */,
 				228036232C32A25900702F39 /* SCNavMain.m in Sources */,
 				7ACE2DAF2C2C02300092982F /* main.m in Sources */,
-				221982CE2C3BC95D0057A9BC /* SCConnection.m in Sources */,
 				22BBC6F72C3FE24800F04D3C /* SCMessageNav.m in Sources */,
+				22D252CB2C47BEDA0078862C /* SCMeeting.m in Sources */,
 				22BBC6FC2C41015800F04D3C /* SCTopSettingTabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

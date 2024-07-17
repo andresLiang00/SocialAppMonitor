@@ -1,17 +1,17 @@
 //
-//  SCConnection.m
+//  SCMeeting.m
 //  SocialCommunity
 //
-//  Created by Tim on 2024/7/8.
+//  Created by Tim on 2024/7/17.
 //
 
-#import "SCConnection.h"
+#import "SCMeeting.h"
 
-@interface SCConnection ()
+@interface SCMeeting ()
 
 @end
 
-@implementation SCConnection
+@implementation SCMeeting
 
 - (void)viewDidLoad {
     [super viewDidLoad];

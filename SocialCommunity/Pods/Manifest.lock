@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
+  - FloatingPanel (2.8.4)
   - SVProgressHUD (2.3.1):
     - SVProgressHUD/Core (= 2.3.1)
   - SVProgressHUD/Core (2.3.1)
@@ -21,20 +22,23 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - FloatingPanel
   - SVProgressHUD
   - WechatOpenSDK-XCFramework
 
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - FloatingPanel
     - SVProgressHUD
     - WechatOpenSDK-XCFramework
 
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  FloatingPanel: e00e106bf97b04d0de00bb360dc626459b0735ef
   SVProgressHUD: 4837c74bdfe2e51e8821c397825996a8d7de6e22
   WechatOpenSDK-XCFramework: 36fb2bea0754266c17184adf4963d7e6ff98b69f
 
-PODFILE CHECKSUM: e88ec71a7f0c2491e998b292fe53f60e914156ae
+PODFILE CHECKSUM: 4991887fab206c06181e900d17f29b3639491574
 
 COCOAPODS: 1.15.2
