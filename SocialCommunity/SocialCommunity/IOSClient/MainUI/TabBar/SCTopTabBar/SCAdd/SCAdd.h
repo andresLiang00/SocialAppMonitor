@@ -1,5 +1,5 @@
 //
-//  SCSearch.h
+//  SCAdd.h
 //  SocialCommunity
 //
 //  Created by Tim on 2024/7/12.
@@ -9,9 +9,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SCSearch : UIView
+@interface SCAdd : UIView
 
-@property (nonatomic, strong) UIButton *searchContentBut;
+// +号按钮
+@property (nonatomic, strong) UIButton *addFunctionBut;
 
 @end
 

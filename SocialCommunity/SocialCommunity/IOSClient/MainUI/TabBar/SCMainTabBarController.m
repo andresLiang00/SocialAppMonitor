@@ -16,6 +16,10 @@
 #import "SCMessage.h"
 #import "SCMessageNav.h"
 #import "SCFile.h"
+#import "SCWork.h"
+#import "SCDaily.h"
+#import "SCMeeting.h"
+#import "SCMore.h"
 
 #define tabbarImageH 22.f
 
@@ -30,6 +34,10 @@
 // 几个子VC
 @property (nonatomic, strong) SCMessage *SCMsgVC;
 @property (nonatomic, strong) SCFile *SCFileVC;
+@property (nonatomic, strong) SCWork *SCWorkVC;
+@property (nonatomic, strong) SCMeeting *SCMeetingVC;
+@property (nonatomic, strong) SCDaily *SCDailyVC;
+@property (nonatomic, strong) SCMore *SCMoreVC;
 
 @end
 
@@ -109,9 +117,13 @@
 
 - (void)createVCGroup {
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"SCMainUIGuide" bundle:nil];
-    SCMessageNav *navi = [sb instantiateViewControllerWithIdentifier:@"SCMessageNav"];
+    self.SCMsgVC = [sb instantiateViewControllerWithIdentifier:@"SCMessageNav"];
     self.SCFileVC = [sb instantiateViewControllerWithIdentifier:@"SCFileNav"];
-    self.viewControllersGroup = @[navi,_SCFileVC];
+    self.SCWorkVC = [sb instantiateViewControllerWithIdentifier:@"SCWorkNav"];
+    self.SCMeetingVC = [sb instantiateViewControllerWithIdentifier:@"SCMeetingNav"];
+    self.SCDailyVC = [sb instantiateViewControllerWithIdentifier:@"SCDailyNav"];
+    self.SCMoreVC = [[SCMore alloc] init];
+    self.viewControllersGroup = @[_SCMsgVC ,_SCFileVC, _SCWorkVC, _SCMeetingVC, _SCDailyVC, _SCMoreVC];
 }
 
 

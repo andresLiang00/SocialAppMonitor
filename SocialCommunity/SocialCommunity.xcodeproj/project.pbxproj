@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22164F562C4E8885009B2999 /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22164F552C4E8885009B2999 /* MenuView.m */; };
 		221982A92C3BBBFD0057A9BC /* SCLoginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 221982A82C3BBBFD0057A9BC /* SCLoginView.storyboard */; };
 		221982AC2C3BBF960057A9BC /* SCLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 221982AB2C3BBF960057A9BC /* SCLogin.m */; };
 		221982AF2C3BC76D0057A9BC /* SCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 221982AE2C3BC76D0057A9BC /* SCMessage.m */; };
@@ -62,6 +63,8 @@
 
 /* Begin PBXFileReference section */
 		07B6F465446E28926F81E55B /* Pods_SocialCommunity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialCommunity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22164F542C4E8885009B2999 /* MenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
+		22164F552C4E8885009B2999 /* MenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuView.m; sourceTree = "<group>"; };
 		221982A82C3BBBFD0057A9BC /* SCLoginView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SCLoginView.storyboard; sourceTree = "<group>"; };
 		221982AA2C3BBF960057A9BC /* SCLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCLogin.h; sourceTree = "<group>"; };
 		221982AB2C3BBF960057A9BC /* SCLogin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCLogin.m; sourceTree = "<group>"; };
@@ -163,6 +166,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22164F532C4E8716009B2999 /* SCAdd */ = {
+			isa = PBXGroup;
+			children = (
+				22BBC7032C41026700F04D3C /* SCAdd.h */,
+				22BBC7042C41026700F04D3C /* SCAdd.m */,
+				22164F542C4E8885009B2999 /* MenuView.h */,
+				22164F552C4E8885009B2999 /* MenuView.m */,
+			);
+			path = SCAdd;
+			sourceTree = "<group>";
+		};
 		221982B22C3BC8100057A9BC /* SCFile */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,8 +258,7 @@
 				22BBC6FE2C41023000F04D3C /* SCTopLargeTitle.m */,
 				22BBC7002C41024D00F04D3C /* SCSearch.h */,
 				22BBC7012C41024D00F04D3C /* SCSearch.m */,
-				22BBC7032C41026700F04D3C /* SCAdd.h */,
-				22BBC7042C41026700F04D3C /* SCAdd.m */,
+				22164F532C4E8716009B2999 /* SCAdd */,
 				22BBC7062C41028000F04D3C /* SCSetting.h */,
 				22BBC7072C41028000F04D3C /* SCSetting.m */,
 			);
@@ -591,6 +604,7 @@
 				22BBC6F72C3FE24800F04D3C /* SCMessageNav.m in Sources */,
 				22D252CB2C47BEDA0078862C /* SCMeeting.m in Sources */,
 				22BBC6FC2C41015800F04D3C /* SCTopSettingTabBar.m in Sources */,
+				22164F562C4E8885009B2999 /* MenuView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,6 +14,9 @@
 
 #import "SCCalendar.h"
 
+#define eachPadding 20.0
+#define eachWidth 30.0
+
 @interface SCTopSettingTabBar ()
 
 // 顶部偏左侧标题
@@ -71,14 +74,23 @@
         case 0: {
             //  消息页
             _SCTopTitle.frame = CGRectMake(0, 0, fullWidth, 56.0f);
-            UIButton *msgPageTitle = [[UIButton alloc] initWithFrame:CGRectZero];
+            UIButton *msgPageTitle = [[UIButton alloc] init];
             [msgPageTitle setTitle:@"其星" forState:UIControlStateNormal];
-            UILabel *msgPageLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+            UILabel *msgPageLabel = [[UILabel alloc] init];
             msgPageLabel.text = @"我的消息";
             
             _SCTopTitle.nameIconBut = msgPageTitle;
             _SCTopTitle.textContent = msgPageLabel;
             [self addSubview:_SCTopTitle];
+            
+            _SCSearch.frame = CGRectMake(fullWidth - eachWidth * 2 - eachPadding * 2, 12, eachWidth, eachWidth);
+            _SCSearch.searchContentBut = [[UIButton alloc] initWithFrame:CGRectZero];
+            [self addSubview:_SCSearch];
+            
+            _SCAdd.frame = CGRectMake(fullWidth - eachWidth * 1 - eachPadding * 1, 12, eachWidth, eachWidth);
+            _SCAdd.addFunctionBut = [[UIButton alloc] initWithFrame:CGRectZero];
+            [self addSubview:_SCAdd];
+            
         }
             break;
         
