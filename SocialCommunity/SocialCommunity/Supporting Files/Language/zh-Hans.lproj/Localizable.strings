@@ -23,9 +23,87 @@
 "_wechat_login_"                     = " 微信登录";
 "_ali_login_"                        = " 支付宝登录";
 "_login_label_hint_"                 = "请输入用户名和密码";
+
+/* MARK: TabbarItem Field */
 "_message_item_"                     = "消息";
 "_file_item_"                        = "文件";
 "_work_item_"                        = "工作台";
 "_meeting_item_"                     = "会议";
 "_daily_item_"                       = "日历";
 "_more_item_"                        = "更多";
+
+/* MARK: Add Field */
+"_addMenu_scan_"                     = "扫一扫";
+"_addMenu_createGroup_"              = "创建群组";
+"_addMenu_addContacts_"              = "添加联系人";
+"_addMenu_newDocs_"                  = "创建文档";
+"_addMenu_newBase_"                  = "创建多维表格";
+"_addMenu_shareScreen_"              = "会议室投屏";
+"_addMenu_newVideoMeeting_"          = "发起视频会议";
+"_addMenu_joinVideoMeeting_"         = "加入视频会议";
+
+/* MARK: Search Field */
+"_search_TopResults_"                = "综合";
+    "_search_TopResults_Hint_"            = "输入关键词进行查询";
+
+"_search_Messages_"                  = "消息";
+    "_search_Messages_Hint_"              = "输入关键词或使用过滤器查找消息记录";
+    "_search_Messages_Froms_"             = "来自用户";
+    "_search_Messages_With_"              = "会话成员";
+    "_search_Messages_Postedin_"          = "所在会话";
+    "_search_Messages_Date_"              = "时间";
+    "_search_Messages_Messagetype_"       = "消息类型";
+    "_search_Messages_Chattype_"          = "会话类型";
+    "_search_Messages_Scope_"             = "匹配范围";
+
+"_search_Docs_"                      = "云文档";
+    "_search_Docs_Hint_"                  = "输入关键词或使用过滤器查找云文档";
+    "_search_Docs_Sort_"                  = "排序";
+    "_search_Docs_Ownedbyme_"             = "归我所有";
+    "_search_Docs_Type_"                  = "类型";
+    "_search_Docs_From_"                  = "来自用户";
+    "_search_Docs_Sharedin_"              = "所在会话";
+    "_search_Docs_Infolder_"              = "所在文件夹";
+    "_search_Docs_In wikispace_"          = "所在知识库";
+    "_search_Docs_Format_"                = "格式";
+    "_search_Docs_Dateviewed_"            = "最近浏览时间";
+    "_search_Docs_Scope_"                 = "匹配范围";
+    "_search_Docs_Owner_"                 = "所有者";
+    "_search_Docs_Sharedby_"              = "分享者";
+
+"_search_Apps_"                      = "应用";
+    "_search_Apps_Hint_"                  = "输入关键词查找应用";
+
+"_search_Contacts_"                  = "联系人";
+    "_search_Contacts_Hint_"              = "通过姓名或邮箱查找联系人";
+
+"_search_Groups_"                    = "群组";
+    "_search_Groups_Hint"                 = "输入关键词或使用过滤器查找群组";
+    "_search_Groups_Sort"                 = "排序";
+    "_search_Groups_Grouptype"            = "群组类型";
+    "_search_Groups_With"                 = "会话成员";
+
+"_search_Calendar_"                 = "日历";
+    "_search_Calendar_Hint"               = "输入关键词进行查询";
+    "_search_Calendar_Organizer"          = "组织者";
+    "_search_Calendar_Attendees"          = "参与者";
+    "_search_Calendar_Calendars"          = "所在日历";
+    "_search_Calendar_MeetingRoom"        = "会议室";
+    "_search_Calendar_Time"               = "时间";
+
+"_search_HelpDesk_"                 = "服务台";
+    "_search_HelpDesk_Hint"               = "查找服务台";
+
+"_search_Minutes_"                  = "妙记";
+    "_search_Minutes_Hint"                = "输入关键词进行查询";
+
+"_search_Tasks_"                    = "任务";
+    "_search_Tasks_Hint"                  = "输入关键词进行查询";
+    "_search_Tasks_Creator"               = "创建人";
+    "_search_Tasks_Owner"                 = "负责人";
+    "_search_Tasks_Status"                = "状态";
+    "_search_Tasks_DueTime"               = "截止时间";
+
+"_search_Subscriptions_"            = "订阅号";
+    "_search_Subscriptions_Hint"          = "输入关键词进行查询";
+    "_search_Subscriptions_Type"          = "类型";

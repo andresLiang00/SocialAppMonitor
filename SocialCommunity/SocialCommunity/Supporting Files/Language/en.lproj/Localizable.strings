@@ -16,16 +16,95 @@
 "_login_page_"                       = "Login / Register your account";
 "_login_mode_"                       = "Login";
 "_register_mode_"                    = "Register";
-"_placeholder_account_"              = "Please enter your account name";
+"_placeholder_account_"              = "Please enter your account";
 "_placeholder_register_account_"     = "Please enter a new account name";
 "_placeholder_password_"             = "Please enter your password";
 "_placeholder_register_password_"    = "Please enter a new password";
 "_wechat_login_"                     = " Wechat login";
 "_ali_login_"                        = " Alipay login";
 "_login_label_hint_"                 = "Please enter your account and password";
+
+/* MARK: TabbarItem Field */
 "_message_item_"                     = "Message";
-"_file_item_"                        = "File";
-"_work_item_"                        = "Work";
+"_file_item_"                        = "Docs";
+"_work_item_"                        = "Workplace";
 "_meeting_item_"                     = "Meeting";
-"_daily_item_"                       = "Daily";
+"_daily_item_"                       = "Calendar";
 "_more_item_"                        = "More";
+
+/* MARK: Add Field */
+"_addMenu_scan_"                     = "Scan QR Code";
+"_addMenu_createGroup_"              = "New Group";
+"_addMenu_addContacts_"              = "Add Contacts";
+"_addMenu_newDocs_"                  = "New Docs";
+"_addMenu_newBase_"                  = "New Base";
+"_addMenu_shareScreen_"              = "Share Screen";
+"_addMenu_newVideoMeeting_"          = "New Video Meeting";
+"_addMenu_joinVideoMeeting_"         = "Join Video Meeting";
+
+/* MARK: Search Field */
+"_search_TopResults_"                = "Top Results";
+    "_search_TopResults_Hint_"            = "Search keywords to find exactly what you need";
+
+"_search_Messages_"                  = "Messages";
+    "_search_Messages_Hint_"              = "Use keywords or filters to search messages";
+    "_search_Messages_Froms_"             = "From";
+    "_search_Messages_With_"              = "With";
+    "_search_Messages_Postedin_"          = "Posted in";
+    "_search_Messages_Date_"              = "Date";
+    "_search_Messages_Messagetype_"       = "Message type";
+    "_search_Messages_Chattype_"          = "Chat types";
+    "_search_Messages_Scope_"             = "Scope";
+
+"_search_Docs_"                      = "Docs";
+    "_search_Docs_Hint_"                  = "Use keywords or filters to search Docs";
+    "_search_Docs_Sort_"                  = "Sorts";
+    "_search_Docs_Ownedbyme_"             = "Owned by me";
+    "_search_Docs_Type_"                  = "Type";
+    "_search_Docs_From_"                  = "From";
+    "_search_Docs_Sharedin_"              = "Shared in";
+    "_search_Docs_Infolder_"              = "In folder";
+    "_search_Docs_In wikispace_"          = "In wiki space";
+    "_search_Docs_Format_"                = "Format";
+    "_search_Docs_Dateviewed_"            = "Date viewed";
+    "_search_Docs_Scope_"                 = "Scope";
+    "_search_Docs_Owner_"                 = "Owner";
+    "_search_Docs_Sharedby_"              = "Shared by";
+
+"_search_Apps_"                      = "Apps";
+    "_search_Apps_Hint_"                  = "Use keywords to search apps";
+
+"_search_Contacts_"                  = "Contacts";
+    "_search_Contacts_Hint_"              = "Search for contacts by name or email";
+
+"_search_Groups_"                    = "Groups";
+    "_search_Groups_Hint"                 = "Use keywords or filters to search for groups";
+    "_search_Groups_Sort"                 = "Sorts";
+    "_search_Groups_Grouptype"            = "Group type";
+    "_search_Groups_With"                 = "With";
+
+"_search_Calendar_"                 = "Calendar";
+    "_search_Calendar_Hint"               = "Search keywords to find exactly what you need";
+    "_search_Calendar_Organizer"          = "Organizer";
+    "_search_Calendar_Attendees"          = "Attendees";
+    "_search_Calendar_Calendars"          = "Calendars";
+    "_search_Calendar_MeetingRoom"        = "MeetingRoom";
+    "_search_Calendar_Time"               = "Time";
+
+"_search_HelpDesk_"                 = "Help Desk";
+    "_search_HelpDesk_Hint"               = "Search Help Desk";
+
+"_search_Minutes_"                  = "Minutes";
+    "_search_Minutes_Hint"                = "Search keywords to find exactly what you need";
+
+"_search_Tasks_"                    = "Tasks";
+    "_search_Tasks_Hint"                  = "Search keywords to find exactly what you need";
+    "_search_Tasks_Creator"               = "Creator";
+    "_search_Tasks_Owner"                 = "Owner";
+    "_search_Tasks_Status"                = "Status";
+    "_search_Tasks_DueTime"               = "Due Time";
+
+"_search_Subscriptions_"            = "Subscriptions";
+    "_search_Subscriptions_Hint"          = "Search keywords to find exactly what you need";
+    "_search_Subscriptions_Type"          = "Type";
+

@@ -6,12 +6,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SCAdd.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 
 @interface SCTopSettingTabBar : UIView
 
+// 顶部右侧添加按钮
+@property (nonatomic, strong) SCAdd *SCAdd;
 - (void)selectedViewWithTag:(NSInteger)tag;
 
 @end

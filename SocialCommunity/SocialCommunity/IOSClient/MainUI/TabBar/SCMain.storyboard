@@ -12,9 +12,8 @@
         <!--Main Navi-->
         <scene sceneID="5B3-5p-jMG">
             <objects>
-                <navigationController storyboardIdentifier="SCMainNavi" id="htm-so-JmP" customClass="SCMainNavi" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="SCMainNavi" navigationBarHidden="YES" id="htm-so-JmP" customClass="SCMainNavi" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="LXR-zn-8e4">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

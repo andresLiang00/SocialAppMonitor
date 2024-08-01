@@ -10,28 +10,14 @@
         <!--Message-->
         <scene sceneID="e72-kz-y4G">
             <objects>
-                <navigationController storyboardIdentifier="SCMessageNav" title="Message" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Wf8-4q-bzP" customClass="SCMessageNav" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="SCMessageNav" title="Message" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="Wf8-4q-bzP" customClass="SCMessageNav" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1st-88-Hqa">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <connections>
-                        <segue destination="bnm-kv-K3b" kind="relationship" relationship="rootViewController" id="Nhe-ok-gr0"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7wc-OL-pyo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-535" y="646"/>
-        </scene>
-        <!--SCMessage-->
-        <scene sceneID="xPc-3j-pKt">
-            <objects>
-                <viewControllerPlaceholder storyboardName="SCMessage" referencedIdentifier="SCMessage" id="bnm-kv-K3b" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="xmF-SE-m2Z"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vXM-BG-5zU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-535" y="1064"/>
         </scene>
         <!--SCFile-->
         <scene sceneID="fua-X9-9Xt">
@@ -46,9 +32,8 @@
         <!--Navigation Controller-->
         <scene sceneID="ncO-pQ-Nuw">
             <objects>
-                <navigationController storyboardIdentifier="SCFileNav" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dap-qR-dun" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="SCFileNav" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="dap-qR-dun" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ich-ek-yvv">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -62,9 +47,8 @@
         <!--Navigation Controller-->
         <scene sceneID="jCO-XH-eTz">
             <objects>
-                <navigationController storyboardIdentifier="SCWorkNav" useStoryboardIdentifierAsRestorationIdentifier="YES" id="C1r-Be-SNs" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="SCWorkNav" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="C1r-Be-SNs" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tBL-JZ-GQf">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -108,9 +92,8 @@
         <!--Navigation Controller-->
         <scene sceneID="0fC-Py-NaG">
             <objects>
-                <navigationController storyboardIdentifier="SCMeetingNav" useStoryboardIdentifierAsRestorationIdentifier="YES" id="W3d-MV-akO" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="SCMeetingNav" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="W3d-MV-akO" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nZA-R9-1Db">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -124,9 +107,8 @@
         <!--Navigation Controller-->
         <scene sceneID="wkQ-UN-zMx">
             <objects>
-                <navigationController storyboardIdentifier="SCDailyNav" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qoI-B2-3ZW" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="SCDailyNav" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="qoI-B2-3ZW" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yKM-KR-NZC">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

@@ -6,13 +6,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SCMessage.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SCAdd : UIView
+@interface SCAdd : UIViewController
 
 // +号按钮
 @property (nonatomic, strong) UIButton *addFunctionBut;
+
+# pragma mark - 收起菜单
+- (void)shouldDismissMenu;
 
 @end
 

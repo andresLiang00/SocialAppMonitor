@@ -23,7 +23,7 @@
 
 #define tabbarImageH 22.f
 
-@interface SCMainTabBarController ()<SCTabbarDelegate>
+@interface SCMainTabBarController ()<SCTabbarDelegate, SCMenuDelegate>
 
 @property (nonatomic, strong) SCSelectedTabbar *bottomTabbar;
 @property (nonatomic, strong) SCTopSettingTabBar *topTabbar;
@@ -66,17 +66,16 @@
 - (void)createStyle {
     [self createVCGroup];
     UITabBarController *systemTabbar = [[UITabBarController alloc] init];
-    NSLog(@"top:%f", safetyTop);
-    NSLog(@"tabbar:%f", systemTabbar.tabBar.frame.size.height);
-    NSLog(@"navigation:%f",self.navigationController.navigationBar.frame.size.height);
-    NSLog(@"navigation:%f",self.navigationController.navigationBar.frame.size.height);
+//    NSLog(@"top:%f", safetyTop);
+//    NSLog(@"tabbar:%f", systemTabbar.tabBar.frame.size.height);
+//    NSLog(@"navigation:%f",self.navigationController.navigationBar.frame.size.height);
+//    NSLog(@"navigation:%f",self.navigationController.navigationBar.frame.size.height);
 //    self.navigationController.navigationBar.backgroundColor = [UIColor blueColor];
     CGFloat tabbarheight = MAX(systemTabbar.tabBar.frame.size.height, fullWidth / 6);
     self.systemTabBarHeight = tabbarheight + safetyBot;
     self.systemTopHeight = tabbarheight;
     self.bottomTabbar = [[SCSelectedTabbar alloc] initWithFrame:CGRectMake(0, fullHeight - self.systemTabBarHeight, fullWidth, self.systemTabBarHeight)];
     self.topTabbar = [[SCTopSettingTabBar alloc] initWithFrame:CGRectMake(0, safetyTop, fullWidth, self.systemTopHeight)];
-//    self.topTabbar.imageHeight = tabbarImageH;
     self.bottomTabbar.tabDelegate = self;
 //    self.topTabbar.backgroundColor = [UIColor redColor];
     self.bottomTabbar.imageHeight = tabbarImageH;
@@ -89,9 +88,9 @@
     self.view.backgroundColor = [UIColor whiteColor];
 //    SCMainTabBar *bar = [[SCMainTabBar alloc] initWithFrame:CGRectZero];
 //    [self setValue:bar forKey:@"tabBar"];
+    [self hideSystemTab];
     [self.view addSubview:self.topTabbar];
     [self.view addSubview:self.bottomTabbar];
-    [self hideSystemTab];
     NSLog(@"minY%f", self.topTabbar.frame.origin.y);
 }
 
@@ -117,27 +116,37 @@
 
 - (void)createVCGroup {
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"SCMainUIGuide" bundle:nil];
-    self.SCMsgVC = [sb instantiateViewControllerWithIdentifier:@"SCMessageNav"];
+//    self.SCMsgVC = [sb instantiateViewControllerWithIdentifier:@"SCMessageNav"];
+    self.SCMsgVC = [[SCMessage alloc] init];
     self.SCFileVC = [sb instantiateViewControllerWithIdentifier:@"SCFileNav"];
     self.SCWorkVC = [sb instantiateViewControllerWithIdentifier:@"SCWorkNav"];
     self.SCMeetingVC = [sb instantiateViewControllerWithIdentifier:@"SCMeetingNav"];
     self.SCDailyVC = [sb instantiateViewControllerWithIdentifier:@"SCDailyNav"];
     self.SCMoreVC = [[SCMore alloc] init];
     self.viewControllersGroup = @[_SCMsgVC ,_SCFileVC, _SCWorkVC, _SCMeetingVC, _SCDailyVC, _SCMoreVC];
+
+    self.SCMsgVC.menuDelegate = self;
 }
 
 
 - (void)tabBar:(SCSelectedTabbar *)tabBar tabDidSelectedIndex:(NSInteger)index {
+    [self menuDismissListen:self.SCMsgVC];
     self.selectedIndex = index;
     NSLog(@"SCMainVC index:%ld",(long)index);
     [self.topTabbar selectedViewWithTag:index];
-    //    UIViewController *matchVC = [self.viewControllersGroup objectAtIndex:index];
-        UINavigationController *matchVC = [self.viewControllersGroup objectAtIndex:index];
-    //    matchVC.view.tag = index;
-        matchVC.view.tag = 0;
-        matchVC.view.frame = CGRectMake(0, 0, fullWidth, fullHeight);
-        [self.view insertSubview:matchVC.view belowSubview:self.bottomTabbar];
-        [self.view insertSubview:matchVC.view belowSubview:self.topTabbar];
+//    UIViewController *matchVC = [self.viewControllersGroup objectAtIndex:index];
+    UINavigationController *matchVC = [self.viewControllersGroup objectAtIndex:index];
+//    matchVC.view.tag = index;
+    matchVC.view.tag = index;
+    matchVC.view.frame = CGRectMake(0, 0, fullWidth, fullHeight);
+    [self.view insertSubview:matchVC.view belowSubview:self.bottomTabbar];
+    [self.view insertSubview:matchVC.view belowSubview:self.topTabbar];
 //    [self addChildViewController:matchVC];
+}
+
+- (void)menuDismissListen:(SCMessage *)SCMsgVC {
+    if (self.topTabbar.SCAdd) {
+        [self.topTabbar.SCAdd shouldDismissMenu];
+    }
 }
 @end

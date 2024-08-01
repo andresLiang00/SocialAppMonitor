@@ -12,9 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SCTopLargeTitle : UIView
 
 // 用户名称对应的button
-@property (nonatomic, strong) UIButton *nameIconBut;
+@property (nonatomic, copy) NSString *nameIconString;
 // 需进行赋值的title内容
-@property (nonatomic, strong) UILabel *textContent;
+@property (nonatomic, copy) NSString *textContentString;
 
 @end
 

@@ -9,10 +9,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol SCMenuDelegate;
 @interface SCMessage : UIViewController
-
-
+//代理
+@property (nonatomic, weak) id <SCMenuDelegate> menuDelegate;
 
 @end
 
+@protocol SCMenuDelegate <NSObject>
+
+- (void)menuDismissListen:(SCMessage *)SCMsgVC;
+
+@end
 NS_ASSUME_NONNULL_END

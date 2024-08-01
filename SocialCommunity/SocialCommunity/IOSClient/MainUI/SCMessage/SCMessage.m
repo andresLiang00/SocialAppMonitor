@@ -37,4 +37,11 @@
     return self;
 }
 
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//    NSLog(@"click");
+    if (self.menuDelegate && [self.menuDelegate respondsToSelector:@selector(menuDismissListen:)]) {
+        [self.menuDelegate menuDismissListen:self];
+    }
+}
 @end

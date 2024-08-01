@@ -18,6 +18,7 @@
 #define safetyBot [UIApplication sharedApplication].delegate.window.safeAreaInsets.bottom
 #define fullWidth [UIScreen mainScreen].bounds.size.width
 #define fullHeight [UIScreen mainScreen].bounds.size.height
+#define WeakSelf(weakSelf) __weak __typeof(&*self)weakSelf = self;
 
 #import "SocialCommunity-Swift.h"
 /* 登录页 */
@@ -25,7 +26,10 @@
 #import "SCLogin.h"
 /* tabbarVC部分 */
 #import "SCMainTabBarController.h"
+/* TopBar */
+#import "SCTopSettingTabBar.h"
 /* category */
 #import "NSString+SCSize.h"
 #import "UIColor+RGBColor.h"
 #import "UIButton+ExtendEdge.h"
+#import "UIImage+AjustImage.h"

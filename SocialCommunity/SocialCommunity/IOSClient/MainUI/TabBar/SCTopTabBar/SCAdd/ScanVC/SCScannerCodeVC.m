@@ -1,22 +1,23 @@
 //
-//  SCMainNavi.m
+//  SCScannerCodeVC.m
 //  SocialCommunity
 //
-//  Created by Tim on 2024/7/15.
+//  Created by Tim on 2024/8/1.
 //
 
-#import "SCMainNavi.h"
+#import "SCScannerCodeVC.h"
+#import <AVFoundation/AVFoundation.h>
 
-@interface SCMainNavi ()
+@interface SCScannerCodeVC () <AVCaptureMetadataOutputObjectsDelegate>
 
 @end
 
-@implementation SCMainNavi
+@implementation SCScannerCodeVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setupScanView];
     // Do any additional setup after loading the view.
-//    self.navigationBar.tintColor = [UIColor blackColor];
 }
 
 /*
@@ -28,5 +29,9 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void)setupScanView {
+    
+}
 
 @end
