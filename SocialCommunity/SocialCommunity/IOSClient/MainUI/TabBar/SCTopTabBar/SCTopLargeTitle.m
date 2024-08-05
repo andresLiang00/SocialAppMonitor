@@ -31,10 +31,6 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor whiteColor];
-//        _nameIconBut = [[UIButton alloc] initWithFrame:CGRectZero];
-//        _textContent = [[UILabel alloc] initWithFrame:CGRectZero];
-//        [self addSubview:self.nameIconBut];
-//        [self addSubview:self.textContent];
     }
     return self;
 }
@@ -54,7 +50,6 @@
         [self addSubview:self.textContent];
     }
 }
-
 
 - (void)setNameIconBut:(UIButton *)nameIconBut {
     if (!_nameIconBut) {

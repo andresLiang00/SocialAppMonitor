@@ -19,6 +19,8 @@
     return _instance;
 }
 
+# pragma mark - 获取当前日期
+
 - (void)getDate {
     NSDate *currentDate = [NSDate date];
     NSCalendar *calendar = [NSCalendar currentCalendar];

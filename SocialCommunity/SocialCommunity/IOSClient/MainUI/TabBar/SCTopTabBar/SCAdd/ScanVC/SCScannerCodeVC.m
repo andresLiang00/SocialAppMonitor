@@ -6,9 +6,13 @@
 //
 
 #import "SCScannerCodeVC.h"
-#import <AVFoundation/AVFoundation.h>
+#import "ScanView.h"
+#import "ScanConfigMeta.h"
 
 @interface SCScannerCodeVC () <AVCaptureMetadataOutputObjectsDelegate>
+
+@property (nonatomic, strong) ScanView* scanView;
+
 
 @end
 
@@ -31,7 +35,19 @@
 */
 
 - (void)setupScanView {
+//    self.view.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.7];
+    self.view.backgroundColor = [UIColor blackColor];
+    [self.view addSubview:self.scanView];
+}
+
+
+# pragma mark - ScanView
+- (ScanView *)scanView {
+    if (!_scanView) {
+        _scanView = [[ScanView alloc] initWithFrame:self.view.bounds config:[[ScanConfigMeta alloc] init]];
+    }
     
+    return _scanView;
 }
 
 @end

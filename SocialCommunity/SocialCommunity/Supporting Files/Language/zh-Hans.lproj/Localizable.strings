@@ -107,3 +107,16 @@
 "_search_Subscriptions_"            = "订阅号";
     "_search_Subscriptions_Hint"          = "输入关键词进行查询";
     "_search_Subscriptions_Type"          = "类型";
+
+/* MARK: Alert tips */
+/* Camera */
+"_camera_denied_tips"               = "未允许访问相机. 请在隐私设置中打开您的相机权限";
+"_camera_restricted_tips"           = "相机访问受限. 请在隐私设置中检查您的相机权限";
+
+/* Photo Library*/
+"_album_denied_tips"                = "未允许访问手机相册. 请在隐私设置中打开您的相册权限";
+"_album_restricted_tips"            = "本地相册访问受限. 请在隐私设置中检查您的相册权限";
+
+/* Scan View*/
+"_tap_light_on"                     = "轻触点亮";
+"_tap_light_off"                    = "轻触关闭";

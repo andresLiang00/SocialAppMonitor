@@ -104,6 +104,7 @@
 }
 */
 
+
 - (void)hideSystemTab {
     NSLog(@"%lu", (unsigned long)self.view.subviews.count);
     for (UIView *sub in self.view.subviews) {
@@ -113,6 +114,8 @@
         }
     }
 }
+
+# pragma mark - 创建多个视图
 
 - (void)createVCGroup {
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"SCMainUIGuide" bundle:nil];
@@ -128,6 +131,7 @@
     self.SCMsgVC.menuDelegate = self;
 }
 
+# pragma mark - 根据不同标签展示不同视图
 
 - (void)tabBar:(SCSelectedTabbar *)tabBar tabDidSelectedIndex:(NSInteger)index {
     [self menuDismissListen:self.SCMsgVC];
@@ -143,6 +147,8 @@
     [self.view insertSubview:matchVC.view belowSubview:self.topTabbar];
 //    [self addChildViewController:matchVC];
 }
+
+# pragma mark - 消息页点击空白处监听
 
 - (void)menuDismissListen:(SCMessage *)SCMsgVC {
     if (self.topTabbar.SCAdd) {

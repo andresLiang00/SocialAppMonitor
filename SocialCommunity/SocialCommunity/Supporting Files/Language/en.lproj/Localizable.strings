@@ -108,3 +108,14 @@
     "_search_Subscriptions_Hint"          = "Search keywords to find exactly what you need";
     "_search_Subscriptions_Type"          = "Type";
 
+/* MARK: Alert tips */
+/* Camera */
+"_camera_denied_tips"               = "Camera authorization denied. Please allow camera authorization                                     in your privacy setting.";
+"_camera_restricted_tips"           = "Camera authorization restricted. Please check camera                                               authorization in your privacy setting.";
+
+/* Photo Library*/
+"_album_denied_tips"                = "Album authorization denied. Please allow album authorization                                       in your privacy setting.";
+"_album_restricted_tips"            = "Album authorization restricted. Please check Album                                                 authorization in your privacy setting.";
+/* Scan View*/
+"_tap_light_on"                     = "Tap to turn light on";
+"_tap_light_off"                    = "Tap to turn light off";

@@ -10,6 +10,9 @@
 #import "SCCollectionLayout.h"
 #import "SCCollectionCell.h"
 
+/* 二维码扫描界面 */
+#import "SCScannerCodeVC.h"
+
 @interface SCAdd () <UICollectionViewDelegate, UICollectionViewDataSource>
 
 @property (nonatomic, strong) NSMutableArray *MenuArrays;
@@ -17,6 +20,7 @@
 @property (nonatomic, strong) MenuView *functionMenu;
 @property (nonatomic, strong) SCCollectionLayout *menuLayout;
 
+@property (nonatomic, strong) SCScannerCodeVC *scanVC;
 @end
 
 static NSString* menuIdentifier = @"MenuIdentifier";
@@ -39,14 +43,6 @@ static NSString* menuIdentifier = @"MenuIdentifier";
     return self;
 }
 
-//- (instancetype)initWithFrame:(CGRect)frame
-//{
-//    self = [super initWithFrame:frame];
-//    if (self) {
-//        self.backgroundColor = [UIColor whiteColor];
-//    }
-//    return self;
-//}
 
 - (void)setAddFunctionBut:(UIButton *)addFunctionBut {
     if (!_addFunctionBut) {
@@ -73,20 +69,21 @@ static NSString* menuIdentifier = @"MenuIdentifier";
     if (_addFunctionBut.selected) {
         self.functionMenu.hidden = NO;
         [UIView animateWithDuration:0.25 animations:^{
-            self.functionMenu.frame = CGRectMake(0.6 * fullWidth - 10 , CGRectGetMaxY(self.view.frame) + 10, 150, 400);
+            self.functionMenu.frame = CGRectMake(fullWidth - 160 , CGRectGetMaxY(self.view.superview.frame), 150, 400);
         }];
     }
     else {
         self.functionMenu.hidden = YES;
-        self.functionMenu.frame = CGRectMake(fullWidth, CGRectGetMaxY(self.view.frame) + 10, 150, 400);
+        self.functionMenu.frame = CGRectMake(fullWidth, CGRectGetMaxY(self.view.superview.frame), 150, 400);
     }
 }
 
+# pragma mark - 收起菜单栏
 - (void)shouldDismissMenu {
     if (_addFunctionBut.selected) {
         _addFunctionBut.selected = !_addFunctionBut.selected;
         self.functionMenu.hidden = YES;
-        self.functionMenu.frame = CGRectMake(fullWidth, CGRectGetMaxY(self.view.frame) + 10, 150, 400);
+        self.functionMenu.frame = CGRectMake(fullWidth, CGRectGetMaxY(self.view.superview.frame), 150, 400);
     }
 }
 
@@ -94,13 +91,14 @@ static NSString* menuIdentifier = @"MenuIdentifier";
 - (MenuView *)functionMenu {
     if (!_functionMenu) {
         //创建一个layout布局类
-        _functionMenu = [[MenuView alloc] initWithFrame:CGRectMake(fullWidth, CGRectGetMaxY(self.view.frame) + 10, 150, 400) collectionViewLayout:self.menuLayout];
+        _functionMenu = [[MenuView alloc] initWithFrame:CGRectMake(fullWidth, CGRectGetMaxY(self.view.superview.frame), 150, 400) collectionViewLayout:self.menuLayout];
         NSLog(@"%f", _functionMenu.frame.size.width);
         NSLog(@"%f", _functionMenu.frame.size.height);
         _functionMenu.delegate = self;
         _functionMenu.dataSource = self;
         [_functionMenu registerClass:[SCCollectionCell class] forCellWithReuseIdentifier:menuIdentifier];
-        [self.view.superview addSubview:self.functionMenu];
+//        [self.view.superview.superview addSubview:self.functionMenu];
+        [[VCManagerTool currentDisplayVC].view addSubview:self.functionMenu];
     }
     return _functionMenu;
 }
@@ -155,11 +153,36 @@ static NSString* menuIdentifier = @"MenuIdentifier";
     return _ImageSetArrays;
 }
 
+- (SCScannerCodeVC *)scanVC {
+    if (!_scanVC) {
+        _scanVC = [[SCScannerCodeVC alloc] init];
+        _scanVC.view.frame = CGRectMake(fullWidth, 0, fullWidth, fullHeight);
+    }
+    
+    return _scanVC;
+}
+
+# pragma mark - 菜单点击事件
+- (void)chooseMenu:(NSInteger)index {
+    switch (index) {
+        case 0: {
+            if (_scanVC) self.scanVC = nil;
+            [[VCManagerTool currentDisplayVC].view addSubview:self.scanVC.view];
+            [UIView animateWithDuration:0.5 animations:^{
+                self.scanVC.view.frame = [UIScreen mainScreen].bounds;
+            }];
+//            [[VCManagerTool currentDisplayVC] presentViewController:self.scanVC animated:YES completion:nil];
+        }
+            break;
+            
+        default:
+            break;
+    }
+}
 
 - (UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
     SCCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:menuIdentifier forIndexPath:indexPath];
     NSString *cellImageName = [self.ImageSetArrays objectAtIndex:indexPath.section];
-    UIImage *cellImg = [[UIImage imageNamed:cellImageName] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
 //    NSLog(@"%ld",indexPath.section);
 //    NSLog(@"imgW:%f",cellImg.size.width);
 //    NSLog(@"imgH:%f",cellImg.size.height);
@@ -177,7 +200,8 @@ static NSString* menuIdentifier = @"MenuIdentifier";
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    
+    NSLog(@"点击了菜单第%ld行", indexPath.section);
+    [self chooseMenu:indexPath.section];
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{

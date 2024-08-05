@@ -57,9 +57,7 @@
     return _SCTopTitle;
 }
 
-//- (SCSearch *)SCSearch {
-//    if (!_)
-//}
+# pragma mark - 根据不同标签展示不同视图
 
 - (void)selectedViewWithTag:(NSInteger)tag {
     _SCTopTitle = [[SCTopLargeTitle alloc] initWithFrame:CGRectZero];

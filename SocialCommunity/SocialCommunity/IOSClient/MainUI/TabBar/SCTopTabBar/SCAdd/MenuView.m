@@ -33,22 +33,4 @@
 }
 
 
-// 配置CollectionVew的参数
-- (void)createLayout {
-//    [self registerClass:[SCCollectionCell class] forCellWithReuseIdentifier:identifier];
-}
-
-//- (void)setDataMenuSources:(NSMutableArray *)dataMenuSources {
-//    if (!_dataMenuSources) {
-//        _dataMenuSources = dataMenuSources;
-//        [self setConfig];
-//    }
-//}
-
-# pragma mark - 配置colloectionView
-//- (void)setConfig {
-//    _layoutConfig.itemSize = CGSizeMake(0.2 * fullWidth, _dataMenuSources.count);
-//    
-//}
-
 @end

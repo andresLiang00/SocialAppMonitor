@@ -33,3 +33,9 @@
 #import "UIColor+RGBColor.h"
 #import "UIButton+ExtendEdge.h"
 #import "UIImage+AjustImage.h"
+
+#import "VCManagerTool.h"
+
+#import <AVFoundation/AVFoundation.h>
+#import <Photos/PHPhotoLibrary.h>
+#import <SVProgressHUD/SVProgressHUD.h>
