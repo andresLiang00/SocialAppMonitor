@@ -16,6 +16,12 @@ typedef void(^returnBlock)(void);
 
 - (instancetype)initWithFrame:(CGRect)frame config:(ScanConfigMeta *)config;
 
+@property (nonatomic, copy)returnBlock returnClick;
+/* 动画 */
+- (void)startLineScanAnimation;
+
+/* 暂停动画 */
+- (void)stopLineScanAnimation;
 @end
 
 NS_ASSUME_NONNULL_END

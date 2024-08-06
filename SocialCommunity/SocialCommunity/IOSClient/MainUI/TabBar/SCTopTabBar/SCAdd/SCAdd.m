@@ -165,13 +165,62 @@ static NSString* menuIdentifier = @"MenuIdentifier";
 # pragma mark - 菜单点击事件
 - (void)chooseMenu:(NSInteger)index {
     switch (index) {
+        /* 扫一扫 */
         case 0: {
-            if (_scanVC) self.scanVC = nil;
+            /* 新增 防止连续的快速点击 */
+            [VCManagerTool currentDisplayVC].view.userInteractionEnabled = NO;
+            if (_scanVC) {
+                _scanVC = nil;
+            }
             [[VCManagerTool currentDisplayVC].view addSubview:self.scanVC.view];
-            [UIView animateWithDuration:0.5 animations:^{
+            [UIView animateWithDuration:0.25 animations:^{
                 self.scanVC.view.frame = [UIScreen mainScreen].bounds;
+            } completion:^(BOOL finished) {
+                [VCManagerTool currentDisplayVC].view.userInteractionEnabled = YES;
             }];
 //            [[VCManagerTool currentDisplayVC] presentViewController:self.scanVC animated:YES completion:nil];
+        }
+            break;
+        
+        /* 创建群组 */
+        case 1: {
+            [VCManagerTool showInfoWithStatus:[NSString stringWithFormat:@"%@开发中",[_MenuArrays objectAtIndex:index]]];
+        }
+            break;
+            
+        /* 添加联系人 */
+        case 2: {
+            [VCManagerTool showInfoWithStatus:[NSString stringWithFormat:@"%@开发中",[_MenuArrays objectAtIndex:index]]];
+        }
+            break;
+        
+        /* 创建文档 */
+        case 3: {
+            [VCManagerTool showInfoWithStatus:[NSString stringWithFormat:@"%@开发中",[_MenuArrays objectAtIndex:index]]];
+        }
+            break;
+            
+        /* 创建多维表格 */
+        case 4: {
+            [VCManagerTool showInfoWithStatus:[NSString stringWithFormat:@"%@开发中",[_MenuArrays objectAtIndex:index]]];
+        }
+            break;
+        
+        /* 会议室投屏 */
+        case 5: {
+            [VCManagerTool showInfoWithStatus:[NSString stringWithFormat:@"%@开发中",[_MenuArrays objectAtIndex:index]]];
+        }
+            break;
+        
+        /* 发起视频会议 */
+        case 6: {      
+            [VCManagerTool showInfoWithStatus:[NSString stringWithFormat:@"%@开发中",[_MenuArrays objectAtIndex:index]]];
+        }
+            break;
+        
+        /* 加入视频会议 */
+        case 7: {
+            [VCManagerTool showInfoWithStatus:[NSString stringWithFormat:@"%@开发中",[_MenuArrays objectAtIndex:index]]];
         }
             break;
             

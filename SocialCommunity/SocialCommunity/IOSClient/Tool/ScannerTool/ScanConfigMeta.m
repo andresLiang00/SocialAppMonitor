@@ -14,7 +14,9 @@
     if (self) {
         self.scannerCornerColor = [UIColor colorWithRed:63/255.0 green:187/255.0 blue:54/255.0 alpha:1.0];
         self.scannerBorderColor = [UIColor whiteColor];
-        self.indicatorViewStyle = UIActivityIndicatorViewStyleLarge;
+        if (@available(iOS 13.0, *)) {
+            self.indicatorViewStyle = UIActivityIndicatorViewStyleLarge;
+        }
         self.scannerType = SCScanQrCodeType;
     }
     return self;

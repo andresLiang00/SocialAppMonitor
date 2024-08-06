@@ -131,22 +131,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DD900BF4-27FD-4F38-B550-A549F9328BDE"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SocialCommunity/IOSClient/MainUI/TabBar/SCTopTabBar/SCAdd/SCCollectionCell.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "-initWithFrame:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "3ABFE36A-A60E-48DE-8681-03DF26951F5A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -170,8 +154,8 @@
             filePath = "SocialCommunity/IOSClient/MainUI/TabBar/SCTopTabBar/SCAdd/ScanVC/ScanView.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "-createScanView"
             landmarkType = "7">
          </BreakpointContent>
@@ -186,8 +170,8 @@
             filePath = "SocialCommunity/IOSClient/MainUI/TabBar/SCTopTabBar/SCAdd/ScanVC/ScanView.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "208"
-            endingLineNumber = "208"
+            startingLineNumber = "317"
+            endingLineNumber = "317"
             landmarkName = "-startLineScanAnimation"
             landmarkType = "7">
          </BreakpointContent>
@@ -202,9 +186,105 @@
             filePath = "SocialCommunity/IOSClient/MainUI/TabBar/SCTopTabBar/SCAdd/ScanVC/SCScannerCodeVC.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "-scanView"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "259ECA3E-CF00-45E4-BDDE-FA3BF8356312"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SocialCommunity/IOSClient/MainUI/TabBar/SCTopTabBar/SCAdd/ScanVC/ScanView.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
+            landmarkName = "-imagePickerController:didFinishPickingMediaWithInfo:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0A525C82-C127-4578-B3B5-044D8E76776C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SocialCommunity/IOSClient/MainUI/TabBar/SCTopTabBar/SCAdd/ScanVC/ScanView.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
+            landmarkName = "-captureOutput:didOutputMetadataObjects:fromConnection:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EC110F02-1055-43DA-A453-456E3A720AF0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SocialCommunity/IOSClient/MainUI/TabBar/SCTopTabBar/SCAdd/ScanVC/ScanView.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "169"
+            endingLineNumber = "169"
+            landmarkName = "-imagePickerControllerDidCancel:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E5B9A073-F1A5-4EA9-B36F-DB1A09D37C74"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SocialCommunity/IOSClient/MainUI/TabBar/SCTopTabBar/SCAdd/ScanVC/SCBottomView.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "-segementChange:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3127C31E-F406-4C94-8C52-AD380F9DD867"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SocialCommunity/IOSClient/MainUI/TabBar/SCTopTabBar/SCAdd/ScanVC/SCBottomView.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "-segementChange:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "322C8721-D004-42A4-B2FF-114EAE3A2E23"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "295"
+            endingLineNumber = "295"
+            landmarkName = "+showImage:status:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

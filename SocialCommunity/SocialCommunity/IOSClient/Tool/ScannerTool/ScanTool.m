@@ -119,16 +119,16 @@
 }
 
 # pragma mark - 打开手机手电筒
-
 + (void)openFlashLight:(BOOL)flashOn {
     AVCaptureDevice *captureDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     /* 若手电筒和闪光灯都有 */
     if ([captureDevice hasTorch] && [captureDevice hasFlash]) {
         [captureDevice lockForConfiguration:nil];
         if (flashOn) {
-            if ([captureDevice isTorchModeSupported:AVCaptureTorchModeOn]) {
-                [captureDevice setTorchMode:AVCaptureTorchModeOn];
-            }
+            [captureDevice setTorchMode:AVCaptureTorchModeOn];
+        }
+        else {
+            [captureDevice setTorchMode:AVCaptureTorchModeOff];
         }
         
         [captureDevice unlockForConfiguration];

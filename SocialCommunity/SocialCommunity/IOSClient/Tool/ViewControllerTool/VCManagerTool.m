@@ -7,6 +7,9 @@
 
 #import "VCManagerTool.h"
 
+static NSTimeInterval maximumDismissTimeInterval = CGFLOAT_MAX;
+static NSTimeInterval minimumDismissTimeInterval = 1.0;
+
 @implementation VCManagerTool
 
 + (UIViewController *)currentDisplayVC {
@@ -36,5 +39,47 @@
     }
     return currentVC;
 }
+
+
++ (void)show {
+    [VCManagerTool currentDisplayVC].view.userInteractionEnabled = NO;
+    [SVProgressHUD show];
+}
+
++ (void)dismiss {
+    [VCManagerTool currentDisplayVC].view.userInteractionEnabled = NO;
+    [SVProgressHUD dismiss];
+}
+
++ (void)showInfoWithStatus:(nullable NSString*)status {
+    [VCManagerTool currentDisplayVC].view.userInteractionEnabled = NO;
+    [SVProgressHUD showInfoWithStatus:status];
+    CGFloat minimum = MAX((CGFloat)status.length * 0.06 + 0.5, minimumDismissTimeInterval);
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(minimum * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [SVProgressHUD dismiss];
+        [VCManagerTool currentDisplayVC].view.userInteractionEnabled = YES;
+    });
+}
+
++ (void)showSuccessWithStatus:(nullable NSString*)status {
+    [VCManagerTool currentDisplayVC].view.userInteractionEnabled = NO;
+    [SVProgressHUD showSuccessWithStatus:status];
+    CGFloat minimum = MAX((CGFloat)status.length * 0.06 + 0.5, minimumDismissTimeInterval);
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(minimum * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [SVProgressHUD dismiss];
+        [VCManagerTool currentDisplayVC].view.userInteractionEnabled = YES;
+    });
+}
+
++ (void)showErrorWithStatus:(nullable NSString*)status {
+    [VCManagerTool currentDisplayVC].view.userInteractionEnabled = NO;
+    [SVProgressHUD showSuccessWithStatus:status];
+    CGFloat minimum = MAX((CGFloat)status.length * 0.06 + 0.5, minimumDismissTimeInterval);
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(minimum * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [SVProgressHUD dismiss];
+        [VCManagerTool currentDisplayVC].view.userInteractionEnabled = YES;
+    });
+}
+
 
 @end

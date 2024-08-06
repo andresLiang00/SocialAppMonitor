@@ -13,6 +13,7 @@
 		2213C68D2C5BB8AF0039AD36 /* ScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2213C68C2C5BB8AF0039AD36 /* ScanView.m */; };
 		2213C6902C5C8A1D0039AD36 /* ScanConfigMeta.m in Sources */ = {isa = PBXBuildFile; fileRef = 2213C68F2C5C8A1D0039AD36 /* ScanConfigMeta.m */; };
 		2213C6942C60CD0F0039AD36 /* VCManagerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2213C6932C60CD0F0039AD36 /* VCManagerTool.m */; };
+		2213C6972C620DF50039AD36 /* SCBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2213C6962C620DF50039AD36 /* SCBottomView.m */; };
 		22164F562C4E8885009B2999 /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22164F552C4E8885009B2999 /* MenuView.m */; };
 		221982A92C3BBBFD0057A9BC /* SCLoginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 221982A82C3BBBFD0057A9BC /* SCLoginView.storyboard */; };
 		221982AC2C3BBF960057A9BC /* SCLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 221982AB2C3BBF960057A9BC /* SCLogin.m */; };
@@ -84,6 +85,8 @@
 		2213C68F2C5C8A1D0039AD36 /* ScanConfigMeta.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanConfigMeta.m; sourceTree = "<group>"; };
 		2213C6922C60CD0F0039AD36 /* VCManagerTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCManagerTool.h; sourceTree = "<group>"; };
 		2213C6932C60CD0F0039AD36 /* VCManagerTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCManagerTool.m; sourceTree = "<group>"; };
+		2213C6952C620DF50039AD36 /* SCBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCBottomView.h; sourceTree = "<group>"; };
+		2213C6962C620DF50039AD36 /* SCBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCBottomView.m; sourceTree = "<group>"; };
 		22164F542C4E8885009B2999 /* MenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
 		22164F552C4E8885009B2999 /* MenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuView.m; sourceTree = "<group>"; };
 		221982A82C3BBBFD0057A9BC /* SCLoginView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SCLoginView.storyboard; sourceTree = "<group>"; };
@@ -198,6 +201,8 @@
 				2213C6812C5BB1A20039AD36 /* SCScannerCodeVC.m */,
 				2213C68B2C5BB8AF0039AD36 /* ScanView.h */,
 				2213C68C2C5BB8AF0039AD36 /* ScanView.m */,
+				2213C6952C620DF50039AD36 /* SCBottomView.h */,
+				2213C6962C620DF50039AD36 /* SCBottomView.m */,
 			);
 			path = ScanVC;
 			sourceTree = "<group>";
@@ -651,6 +656,7 @@
 			files = (
 				22AF14222C3BE3F5009F491C /* SCTabBarItem.m in Sources */,
 				22AF141C2C3BDFBA009F491C /* SCSelectedTabbar.m in Sources */,
+				2213C6972C620DF50039AD36 /* SCBottomView.m in Sources */,
 				2213C6822C5BB1A20039AD36 /* SCScannerCodeVC.m in Sources */,
 				22BBC6FF2C41023000F04D3C /* SCTopLargeTitle.m in Sources */,
 				22AF14252C3BE6B3009F491C /* NSString+SCSize.m in Sources */,
@@ -869,7 +875,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = OpeningVC;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -915,7 +921,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = OpeningVC;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
