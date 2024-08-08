@@ -5,9 +5,9 @@
 //  Created by Tim on 2024/7/24.
 //
 
-#import "SCCollectionCell.h"
+#import "SCMenunCell.h"
 
-@implementation SCCollectionCell
+@implementation SCMenunCell
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -24,15 +24,15 @@
     self.backgroundColor = [UIColor whiteColor];
     
     /* 图标 */
-    self.iconTV = [[UIImageView alloc] init];
-    self.iconTV.frame = CGRectMake(10, 15, 20, 20);
-    self.iconTV.tintColor = [UIColor blackColor];
-    self.iconTV.contentMode = UIViewContentModeScaleAspectFit;
-    [self addSubview:self.iconTV];
+    self.iconIV = [[UIImageView alloc] init];
+    self.iconIV.frame = CGRectMake(10, 15, 20, 20);
+    self.iconIV.tintColor = [UIColor blackColor];
+    self.iconIV.contentMode = UIViewContentModeScaleAspectFit;
+    [self addSubview:self.iconIV];
     
     /* 文字内容 */
     self.menuLabel = [[UILabel alloc] init];
-    self.menuLabel.frame = CGRectMake(CGRectGetMaxX(self.iconTV.frame) + 10, 10, self.frame.size.width - (CGRectGetMaxX(self.iconTV.frame) + 10), 30);
+    self.menuLabel.frame = CGRectMake(CGRectGetMaxX(self.iconIV.frame) + 10, 10, self.frame.size.width - (CGRectGetMaxX(self.iconIV.frame) + 10), 30);
     self.menuLabel.textColor = [UIColor blackColor];
     self.menuLabel.font = [UIFont systemFontOfSize:14];
     [self addSubview:self.menuLabel];

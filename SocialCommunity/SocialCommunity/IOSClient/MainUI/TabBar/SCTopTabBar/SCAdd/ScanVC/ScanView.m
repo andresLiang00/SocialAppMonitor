@@ -155,10 +155,11 @@
             if (recognizeFeatures.count > 0) {
                 CIQRCodeFeature *feature = recognizeFeatures[0];
                 NSString *strValue = feature.messageString;
-                [SVProgressHUD showInfoWithStatus:strValue];
+                [VCManagerTool showInfoWithStatus:strValue];
+                [ScanTool QrCodeRecognize:strValue];
             }
             else {
-                [SVProgressHUD showErrorWithStatus:@"Invalid QRCode"];
+                [VCManagerTool showErrorWithStatus:@"Invalid QRCode"];
             }
         }];
     }
@@ -196,7 +197,8 @@
     if (metadataObjects && metadataObjects.count > 0) {
         AVMetadataMachineReadableCodeObject *metadataObject = metadataObjects[0];
         NSString *stringValue = metadataObject.stringValue;
-        [SVProgressHUD showInfoWithStatus:stringValue];
+        [VCManagerTool showInfoWithStatus:stringValue];
+        [ScanTool QrCodeRecognize:stringValue];
     }
 }
 

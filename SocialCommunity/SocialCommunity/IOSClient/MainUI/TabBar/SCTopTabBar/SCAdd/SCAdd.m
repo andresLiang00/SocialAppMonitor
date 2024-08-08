@@ -8,10 +8,12 @@
 #import "SCAdd.h"
 #import "MenuView.h"
 #import "SCCollectionLayout.h"
-#import "SCCollectionCell.h"
+#import "SCMenunCell.h"
 
 /* 二维码扫描界面 */
 #import "SCScannerCodeVC.h"
+/* 创建群组界面 */
+#import "SCGroupCreate.h"
 
 @interface SCAdd () <UICollectionViewDelegate, UICollectionViewDataSource>
 
@@ -21,6 +23,7 @@
 @property (nonatomic, strong) SCCollectionLayout *menuLayout;
 
 @property (nonatomic, strong) SCScannerCodeVC *scanVC;
+
 @end
 
 static NSString* menuIdentifier = @"MenuIdentifier";
@@ -96,7 +99,7 @@ static NSString* menuIdentifier = @"MenuIdentifier";
         NSLog(@"%f", _functionMenu.frame.size.height);
         _functionMenu.delegate = self;
         _functionMenu.dataSource = self;
-        [_functionMenu registerClass:[SCCollectionCell class] forCellWithReuseIdentifier:menuIdentifier];
+        [_functionMenu registerClass:[SCMenunCell class] forCellWithReuseIdentifier:menuIdentifier];
 //        [self.view.superview.superview addSubview:self.functionMenu];
         [[VCManagerTool currentDisplayVC].view addSubview:self.functionMenu];
     }
@@ -153,6 +156,7 @@ static NSString* menuIdentifier = @"MenuIdentifier";
     return _ImageSetArrays;
 }
 
+# pragma mark - 二维码扫描界面
 - (SCScannerCodeVC *)scanVC {
     if (!_scanVC) {
         _scanVC = [[SCScannerCodeVC alloc] init];
@@ -184,7 +188,9 @@ static NSString* menuIdentifier = @"MenuIdentifier";
         
         /* 创建群组 */
         case 1: {
-            [VCManagerTool showInfoWithStatus:[NSString stringWithFormat:@"%@开发中",[_MenuArrays objectAtIndex:index]]];
+//            [VCManagerTool showInfoWithStatus:[NSString stringWithFormat:@"%@开发中",[_MenuArrays objectAtIndex:index]]];
+            SCGroupCreate *groupCreateVC = [[SCGroupCreate alloc] init];
+            [[VCManagerTool currentDisplayVC] presentViewController:groupCreateVC animated:YES completion:nil];
         }
             break;
             
@@ -230,12 +236,12 @@ static NSString* menuIdentifier = @"MenuIdentifier";
 }
 
 - (UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    SCCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:menuIdentifier forIndexPath:indexPath];
+    SCMenunCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:menuIdentifier forIndexPath:indexPath];
     NSString *cellImageName = [self.ImageSetArrays objectAtIndex:indexPath.section];
 //    NSLog(@"%ld",indexPath.section);
 //    NSLog(@"imgW:%f",cellImg.size.width);
 //    NSLog(@"imgH:%f",cellImg.size.height);
-    cell.iconTV.image = [[UIImage imageNamed:cellImageName] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    cell.iconIV.image = [[UIImage imageNamed:cellImageName] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     cell.menuLabel.text = [_MenuArrays objectAtIndex:indexPath.section];
     return cell;
 }

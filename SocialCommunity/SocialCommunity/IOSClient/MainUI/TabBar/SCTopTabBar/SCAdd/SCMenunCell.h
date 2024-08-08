@@ -9,9 +9,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SCCollectionCell : UICollectionViewCell
+@interface SCMenunCell : UICollectionViewCell
 
-@property (nonatomic, strong) UIImageView *iconTV;
+@property (nonatomic, strong) UIImageView *iconIV;
 @property (nonatomic, strong) UILabel *menuLabel;
 
 @end

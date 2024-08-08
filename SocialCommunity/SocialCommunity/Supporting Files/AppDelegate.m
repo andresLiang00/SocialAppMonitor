@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import "WXApi.h"
 
 @interface AppDelegate ()
 
@@ -22,6 +23,8 @@
 //    self.window.rootViewController = customTabbarVC;
 ////    self.window.rootViewController = [InitVC new];
 //    [self.window makeKeyAndVisible];
+    //向微信注册
+//    [WXApi registerApp:@"wxd930ea5d5a258f4f" withDescription:@"demo 2.0"];
     return YES;
 }
 

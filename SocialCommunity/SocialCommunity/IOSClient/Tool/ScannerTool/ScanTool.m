@@ -136,4 +136,10 @@
     }
 }
 
+# pragma mark - 识别二维码跳转
++ (void)QrCodeRecognize:(nonnull NSString*)universeLink {
+//    [[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:[NSString stringWithFormat:@"wxd930ea5d5a258f4f%d://",0]]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",universeLink]]];
+}
+
 @end

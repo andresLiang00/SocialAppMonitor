@@ -23,6 +23,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 # pragma mark - 打开手机手电筒
 + (void)openFlashLight:(BOOL)flashOn;
+
+# pragma mark - 识别二维码跳转
++ (void)QrCodeRecognize:(nonnull NSString*)universeLink;
 @end
 
 NS_ASSUME_NONNULL_END

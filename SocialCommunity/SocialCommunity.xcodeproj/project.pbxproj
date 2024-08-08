@@ -14,6 +14,13 @@
 		2213C6902C5C8A1D0039AD36 /* ScanConfigMeta.m in Sources */ = {isa = PBXBuildFile; fileRef = 2213C68F2C5C8A1D0039AD36 /* ScanConfigMeta.m */; };
 		2213C6942C60CD0F0039AD36 /* VCManagerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2213C6932C60CD0F0039AD36 /* VCManagerTool.m */; };
 		2213C6972C620DF50039AD36 /* SCBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2213C6962C620DF50039AD36 /* SCBottomView.m */; };
+		2213C69B2C631EF20039AD36 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2213C69A2C631EF20039AD36 /* libWeChatSDK.a */; };
+		2213C69D2C631F0D0039AD36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2213C69C2C631F0D0039AD36 /* CoreGraphics.framework */; };
+		2213C69F2C631F880039AD36 /* AFServiceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2213C69E2C631F880039AD36 /* AFServiceSDK.framework */; };
+		2213C6AD2C6469130039AD36 /* SCGroupCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2213C6AC2C6469130039AD36 /* SCGroupCreate.m */; };
+		2213C6B02C6469D70039AD36 /* GroupTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2213C6AF2C6469D70039AD36 /* GroupTopView.m */; };
+		2213C6B32C646B010039AD36 /* GroupSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2213C6B22C646B010039AD36 /* GroupSearch.m */; };
+		2213C6B62C64C7650039AD36 /* GroupResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2213C6B52C64C7650039AD36 /* GroupResultCell.m */; };
 		22164F562C4E8885009B2999 /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22164F552C4E8885009B2999 /* MenuView.m */; };
 		221982A92C3BBBFD0057A9BC /* SCLoginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 221982A82C3BBBFD0057A9BC /* SCLoginView.storyboard */; };
 		221982AC2C3BBF960057A9BC /* SCLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 221982AB2C3BBF960057A9BC /* SCLogin.m */; };
@@ -45,8 +52,7 @@
 		22BBC70D2C44CDAD00F04D3C /* SCMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22BBC70C2C44CDAD00F04D3C /* SCMain.storyboard */; };
 		22BBC7102C44CE7000F04D3C /* SCMainNavi.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BBC70F2C44CE7000F04D3C /* SCMainNavi.m */; };
 		22C277DB2C51242500613354 /* SCCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C277DA2C51242500613354 /* SCCollectionLayout.m */; };
-		22C277DE2C512B8F00613354 /* SCCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C277DD2C512B8F00613354 /* SCCollectionCell.m */; };
-		22C857702C36CD0600967E4E /* AFServiceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C8576F2C36CD0600967E4E /* AFServiceSDK.framework */; };
+		22C277DE2C512B8F00613354 /* SCMenunCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C277DD2C512B8F00613354 /* SCMenunCell.m */; };
 		22D17D212C37D390005FDAE1 /* SCMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D17D202C37D390005FDAE1 /* SCMainTabBarController.m */; };
 		22D17D262C37D3FC005FDAE1 /* IOSClientMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D17D252C37D3FC005FDAE1 /* IOSClientMain.storyboard */; };
 		22D252CB2C47BEDA0078862C /* SCMeeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D252CA2C47BEDA0078862C /* SCMeeting.m */; };
@@ -87,6 +93,19 @@
 		2213C6932C60CD0F0039AD36 /* VCManagerTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCManagerTool.m; sourceTree = "<group>"; };
 		2213C6952C620DF50039AD36 /* SCBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCBottomView.h; sourceTree = "<group>"; };
 		2213C6962C620DF50039AD36 /* SCBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCBottomView.m; sourceTree = "<group>"; };
+		2213C6982C631EF20039AD36 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		2213C6992C631EF20039AD36 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		2213C69A2C631EF20039AD36 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		2213C69C2C631F0D0039AD36 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2213C69E2C631F880039AD36 /* AFServiceSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AFServiceSDK.framework; sourceTree = "<group>"; };
+		2213C6AB2C6469130039AD36 /* SCGroupCreate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCGroupCreate.h; sourceTree = "<group>"; };
+		2213C6AC2C6469130039AD36 /* SCGroupCreate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCGroupCreate.m; sourceTree = "<group>"; };
+		2213C6AE2C6469D70039AD36 /* GroupTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroupTopView.h; sourceTree = "<group>"; };
+		2213C6AF2C6469D70039AD36 /* GroupTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroupTopView.m; sourceTree = "<group>"; };
+		2213C6B12C646B010039AD36 /* GroupSearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroupSearch.h; sourceTree = "<group>"; };
+		2213C6B22C646B010039AD36 /* GroupSearch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroupSearch.m; sourceTree = "<group>"; };
+		2213C6B42C64C7650039AD36 /* GroupResultCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroupResultCell.h; sourceTree = "<group>"; };
+		2213C6B52C64C7650039AD36 /* GroupResultCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroupResultCell.m; sourceTree = "<group>"; };
 		22164F542C4E8885009B2999 /* MenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
 		22164F552C4E8885009B2999 /* MenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuView.m; sourceTree = "<group>"; };
 		221982A82C3BBBFD0057A9BC /* SCLoginView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SCLoginView.storyboard; sourceTree = "<group>"; };
@@ -141,9 +160,8 @@
 		22BBC70F2C44CE7000F04D3C /* SCMainNavi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCMainNavi.m; sourceTree = "<group>"; };
 		22C277D92C51242500613354 /* SCCollectionLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCollectionLayout.h; sourceTree = "<group>"; };
 		22C277DA2C51242500613354 /* SCCollectionLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCollectionLayout.m; sourceTree = "<group>"; };
-		22C277DC2C512B8F00613354 /* SCCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCollectionCell.h; sourceTree = "<group>"; };
-		22C277DD2C512B8F00613354 /* SCCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCollectionCell.m; sourceTree = "<group>"; };
-		22C8576F2C36CD0600967E4E /* AFServiceSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AFServiceSDK.framework; sourceTree = "<group>"; };
+		22C277DC2C512B8F00613354 /* SCMenunCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCMenunCell.h; sourceTree = "<group>"; };
+		22C277DD2C512B8F00613354 /* SCMenunCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCMenunCell.m; sourceTree = "<group>"; };
 		22D17D1F2C37D390005FDAE1 /* SCMainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCMainTabBarController.h; sourceTree = "<group>"; };
 		22D17D202C37D390005FDAE1 /* SCMainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCMainTabBarController.m; sourceTree = "<group>"; };
 		22D17D252C37D3FC005FDAE1 /* IOSClientMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IOSClientMain.storyboard; sourceTree = "<group>"; };
@@ -186,8 +204,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22C857702C36CD0600967E4E /* AFServiceSDK.framework in Frameworks */,
+				2213C69F2C631F880039AD36 /* AFServiceSDK.framework in Frameworks */,
+				2213C69D2C631F0D0039AD36 /* CoreGraphics.framework in Frameworks */,
 				E3ACF065F30A6ADBD0CD13DF /* Pods_SocialCommunity.framework in Frameworks */,
+				2213C69B2C631EF20039AD36 /* libWeChatSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +256,21 @@
 			path = ViewControllerTool;
 			sourceTree = "<group>";
 		};
+		2213C6AA2C6468B20039AD36 /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				2213C6AB2C6469130039AD36 /* SCGroupCreate.h */,
+				2213C6AC2C6469130039AD36 /* SCGroupCreate.m */,
+				2213C6AE2C6469D70039AD36 /* GroupTopView.h */,
+				2213C6AF2C6469D70039AD36 /* GroupTopView.m */,
+				2213C6B12C646B010039AD36 /* GroupSearch.h */,
+				2213C6B22C646B010039AD36 /* GroupSearch.m */,
+				2213C6B42C64C7650039AD36 /* GroupResultCell.h */,
+				2213C6B52C64C7650039AD36 /* GroupResultCell.m */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
 		22164F532C4E8716009B2999 /* SCAdd */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,9 +280,10 @@
 				22164F552C4E8885009B2999 /* MenuView.m */,
 				22C277D92C51242500613354 /* SCCollectionLayout.h */,
 				22C277DA2C51242500613354 /* SCCollectionLayout.m */,
-				22C277DC2C512B8F00613354 /* SCCollectionCell.h */,
-				22C277DD2C512B8F00613354 /* SCCollectionCell.m */,
+				22C277DC2C512B8F00613354 /* SCMenunCell.h */,
+				22C277DD2C512B8F00613354 /* SCMenunCell.m */,
 				2213C6832C5BB1A80039AD36 /* ScanVC */,
+				2213C6AA2C6468B20039AD36 /* Group */,
 			);
 			path = SCAdd;
 			sourceTree = "<group>";
@@ -341,12 +377,15 @@
 			path = SCTopTabBar;
 			sourceTree = "<group>";
 		};
-		22C8576E2C36CCF100967E4E /* SDK */ = {
+		22C8576E2C36CCF100967E4E /* SDKExport */ = {
 			isa = PBXGroup;
 			children = (
-				22C8576F2C36CD0600967E4E /* AFServiceSDK.framework */,
+				2213C69E2C631F880039AD36 /* AFServiceSDK.framework */,
+				2213C69A2C631EF20039AD36 /* libWeChatSDK.a */,
+				2213C6982C631EF20039AD36 /* WXApi.h */,
+				2213C6992C631EF20039AD36 /* WXApiObject.h */,
 			);
-			path = SDK;
+			path = SDKExport;
 			sourceTree = "<group>";
 		};
 		22D17D1D2C37D304005FDAE1 /* Login */ = {
@@ -423,7 +462,7 @@
 		7AC618272C2D8A230030D9C9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				22C8576E2C36CCF100967E4E /* SDK */,
+				22C8576E2C36CCF100967E4E /* SDKExport */,
 				7AC6182D2C2E6CC00030D9C9 /* Font */,
 				7ACE2DB92C2C0D070092982F /* Language */,
 				7ACE2D9C2C2C02240092982F /* AppDelegate.h */,
@@ -506,6 +545,7 @@
 		BE1D4A530C243DB6AD102316 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2213C69C2C631F0D0039AD36 /* CoreGraphics.framework */,
 				2213C6842C5BB49A0039AD36 /* AVFoundation.framework */,
 				07B6F465446E28926F81E55B /* Pods_SocialCommunity.framework */,
 			);
@@ -665,6 +705,8 @@
 				22BBC7022C41024D00F04D3C /* SCSearch.m in Sources */,
 				7ACE2DA42C2C02240092982F /* OpeningVC.m in Sources */,
 				221982C92C3BC8B00057A9BC /* SCMore.m in Sources */,
+				2213C6B32C646B010039AD36 /* GroupSearch.m in Sources */,
+				2213C6B02C6469D70039AD36 /* GroupTopView.m in Sources */,
 				2213C6942C60CD0F0039AD36 /* VCManagerTool.m in Sources */,
 				221982AF2C3BC76D0057A9BC /* SCMessage.m in Sources */,
 				7AC618262C2D87910030D9C9 /* UIView+BasicAnimation.m in Sources */,
@@ -672,13 +714,14 @@
 				22BBC6EF2C3E86CB00F04D3C /* SCCalendar.m in Sources */,
 				221982AC2C3BBF960057A9BC /* SCLogin.m in Sources */,
 				22AF141F2C3BE1E1009F491C /* SCTabBarButton.m in Sources */,
-				22C277DE2C512B8F00613354 /* SCCollectionCell.m in Sources */,
+				22C277DE2C512B8F00613354 /* SCMenunCell.m in Sources */,
 				22BBC70B2C4122E100F04D3C /* UIButton+ExtendEdge.m in Sources */,
 				22BBC6EC2C3E326100F04D3C /* UIColor+RGBColor.m in Sources */,
 				22D17D212C37D390005FDAE1 /* SCMainTabBarController.m in Sources */,
 				7ACE2DD42C2D05B00092982F /* AppConfig.swift in Sources */,
 				22BBC7102C44CE7000F04D3C /* SCMainNavi.m in Sources */,
 				22BBC7082C41028000F04D3C /* SCSetting.m in Sources */,
+				2213C6B62C64C7650039AD36 /* GroupResultCell.m in Sources */,
 				221982C32C3BC89A0057A9BC /* SCDaily.m in Sources */,
 				7ACE2D9E2C2C02240092982F /* AppDelegate.m in Sources */,
 				2213C68D2C5BB8AF0039AD36 /* ScanView.m in Sources */,
@@ -687,6 +730,7 @@
 				221982B92C3BC8700057A9BC /* SCFile.m in Sources */,
 				228036232C32A25900702F39 /* SCNavMain.m in Sources */,
 				7ACE2DAF2C2C02300092982F /* main.m in Sources */,
+				2213C6AD2C6469130039AD36 /* SCGroupCreate.m in Sources */,
 				22BBC6F72C3FE24800F04D3C /* SCMessageNav.m in Sources */,
 				2213C6902C5C8A1D0039AD36 /* ScanConfigMeta.m in Sources */,
 				2213C67F2C5B7E050039AD36 /* UIImage+AjustImage.m in Sources */,
@@ -863,6 +907,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SocialCommunity/Supporting\\ Files/SDK",
+					"$(PROJECT_DIR)/SocialCommunity/Supporting\\ Files/SDKExport",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/SocialCommunity/Supporting Files/PrefixHeader.pch";
@@ -879,6 +924,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocialCommunity/Supporting\\ Files/SDKExport",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.timdesign.socialapp.SocialCommunity;
@@ -909,6 +958,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SocialCommunity/Supporting\\ Files/SDK",
+					"$(PROJECT_DIR)/SocialCommunity/Supporting\\ Files/SDKExport",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/SocialCommunity/Supporting Files/PrefixHeader.pch";
@@ -925,6 +975,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocialCommunity/Supporting\\ Files/SDKExport",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.timdesign.socialapp.SocialCommunity;

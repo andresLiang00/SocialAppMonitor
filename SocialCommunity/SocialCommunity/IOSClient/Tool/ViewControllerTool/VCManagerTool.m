@@ -46,6 +46,11 @@ static NSTimeInterval minimumDismissTimeInterval = 1.0;
     [SVProgressHUD show];
 }
 
++ (void)showWithStatus:(nullable NSString*)status {
+    [VCManagerTool currentDisplayVC].view.userInteractionEnabled = NO;
+    [SVProgressHUD showWithStatus:status];
+}
+
 + (void)dismiss {
     [VCManagerTool currentDisplayVC].view.userInteractionEnabled = NO;
     [SVProgressHUD dismiss];

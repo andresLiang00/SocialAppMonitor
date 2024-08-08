@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIViewController *)currentDisplayVC;
 
 + (void)show;
++ (void)showWithStatus:(nullable NSString*)status;
 + (void)dismiss;
 + (void)showInfoWithStatus:(nullable NSString*)status;
 + (void)showSuccessWithStatus:(nullable NSString*)status;
